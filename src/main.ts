@@ -22,8 +22,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <div class="switch-btn">
               <label for="switch">
                 <div class="icons">
-                  <img src="https://raw.githubusercontent.com/ronaldhgamez/portafolio/main/src/moon-icon.png" alt="moon icon" />
-                  <img src="https://raw.githubusercontent.com/ronaldhgamez/portafolio/main/src/sun-icon.png" alt="sun icon" />
+                  <img src="https://raw.githubusercontent.com/ronaldhgamez/portafolio/main/src/img/moon-icon.png" alt="moon icon" />
+                  <img src="https://raw.githubusercontent.com/ronaldhgamez/portafolio/main/src/img/sun-icon.png" alt="sun icon" />
                 </div>
               </label>
             </div>

@@ -1,6 +1,6 @@
-import './style.css'
-import './icon_style.css'
-import './bodyStyles.css'
+import './styles/style.css'
+import './styles/icon_style.css'
+import './styles/bodyStyles.css'
 
 // Set the HTML content to the desired element
 
@@ -22,8 +22,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <div class="switch-btn">
               <label for="switch">
                 <div class="icons">
-                  <img src="./src/moon-icon.png" alt="moon" />
-                  <img src="./src/sun-icon.png" alt="moon" />
+                  <img src="https://raw.githubusercontent.com/ronaldhgamez/portafolio/main/src/moon-icon.png" alt="moon icon" />
+                  <img src="https://raw.githubusercontent.com/ronaldhgamez/portafolio/main/src/sun-icon.png" alt="sun icon" />
                 </div>
               </label>
             </div>

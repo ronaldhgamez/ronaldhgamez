@@ -1,6 +1,7 @@
 import './styles/style.css'
 import './styles/icon_style.css'
 import './styles/bodyStyles.css'
+import './styles/header.css'
 
 // Set the HTML content to the desired element
 
@@ -8,12 +9,12 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <header>
     <div class="container">
       <div class="title"><a>{dev|Ronaldhg}</a></div>
-      <div class="content">
+      <div class="webHeaderContent">
         <nav class="navBarMenu">
-          <a class="link"><span>About</span></a>
-          <a class="link"><span>Config</span></a>
-          <a class="link"><span>Plugin</span></a>
-          <a class="link"><span>Resources</span></a>
+          <a class="navOption"><span>Home</span></a>
+          <a class="navOption"><span>About Me</span></a>
+          <a class="navOption"><span>Language</span></a>
+          <a class="navOption"><span>Download CV</span></a>
         </nav>
 
         <div class="hundredpx">
@@ -29,13 +30,28 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             </div>
           </div>
         </div>
-
-        <div class="navBarExtra">
-          <!--button id="toggle">...</!--button-->
-          <div class="menu"></div>
-        </div>
-        
       </div>
+
+      <div class="mobileHeaderContent">
+        <div class="navBarHamburger">
+          <input type="checkbox" id="toggleCheckbox">
+          <label for="toggleCheckbox" class="navBarHamburger">
+            <i class="menuIcon material-icons">menu</i>
+          </label>
+          <!-- <i class="closeIcon material-icons">close</i> -->
+        </div>
+        <!-- Floating menu -->
+        <div id="mobileNavMenu">
+            <nav class="mobileNavOptions">
+              <a class="navOption"><span>Home</span></a>
+              <a class="navOption"><span>About Me</span></a>
+              <a class="navOption"><span>Language</span></a>
+              <a class="navOption"><span>Theme</span></a>
+              <a class="navOption"><span>Download CV</span></a>
+            </nav>
+          </div>
+      </div>
+
     </div>
   </header>
   

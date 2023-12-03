@@ -18,3 +18,9 @@ Please note that the portfolio is currently under development.
     <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/CSS3Logo.png" alt="CSS Logo" width="72">
     <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ViteLogo.png" alt="Vite Logo" width="100">
 </div>
+
+
+## Reach me at
+<p align="center">
+  <a href="https://www.linkedin.com/in/jacv/"><img src="https://brand.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" width="50" height="50"/></a>
+</p>

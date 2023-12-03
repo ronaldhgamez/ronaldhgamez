@@ -26,23 +26,24 @@ body {
     cursor: pointer;
 }
 
-.content{
+.webHeaderContent {
     display: flex;
     position: relative;
     width: 100%;
     justify-content: right;
-    color:#dfdfd6;
 }
 
-span {
+.navOption {
     height: 63px;
     display: flex;
     align-items: center;
-    padding: 0px 12px; /* left and right only */
+    padding: 0px 12px;
+    /* left and right only */
     cursor: pointer;
+    color: #dfdfd6;
 }
 
-span:hover {
+.navOption:hover {
     color: #9497f8;
     transition: 0.5s;
 }
@@ -50,6 +51,8 @@ span:hover {
 .navBarMenu {
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 .navBarExtra {
@@ -63,18 +66,19 @@ span:hover {
     width: 100px;
 }
 
-.link {
+/* .link {
     display: flex;
     align-items: center;
     padding: 0, 12px
-}
-
+} */
 
 /* Media query for mobile devices (up to 767 pixels wide) */
 @media only screen and (max-width: 767px) {
-    .content {
-      display: none;
+    .webHeaderContent {
+        display: none;
     }
-  
-    /* Add more styles for mobile devices here */
-  }
+    /* Sends hamburger icon at the end */
+    .container {
+        justify-content: space-between;
+    }
+}

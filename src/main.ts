@@ -60,20 +60,23 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <div class="iconContainer">
               <!-- Linkedin Icon Link -->
               <a class="contactIcons" href="https://www.linkedin.com/in/ronaldhgamez/" aria-label="linkedin" target="_blank" rel="noopener">
-                <img alt="Linkedin Link" src="/src/svg/linkedin.svg" />
+                <img alt="Linkedin Link" src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/c634ec3e23d28e41ffe0a060bcfdd32855894947/svg/linkedin.svg" />
               </a>  
               <!-- Github Icon Link -->
               <a class="contactIcons" href="https://github.com/ronaldhgamez" aria-label="github" target="_blank" rel="noopener">
-                <img alt="GitHub Link" src="/src/svg/github.svg" />
+                <img alt="GitHub Link" src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/c634ec3e23d28e41ffe0a060bcfdd32855894947/svg/github.svg" />
               </a>
               
               <a class="color-icon" href="mailto:ronaldhgamez@gmail.com">
-                <img src="/src/svg/gmail.svg"/>
+                <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/9db667a770ed44caed4542851cf3c46d9851f4cc/svg/gmail.svg"/>
               </a>
 
               <!-- WhatsApp Icon Link -->
               <a class="color-icon" href="https://wa.me/50664178996" aria-label="whatsapp" target="_blank" rel="noopener">
-                <img alt="Chat on WhatsApp" src="/src/svg/whatsapp.svg" />
+                <img 
+                  alt="Chat on WhatsApp" 
+                  src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/c634ec3e23d28e41ffe0a060bcfdd32855894947/svg/whatsapp.svg"
+                />
               </a>
             </div> <!-- End Contact Icons -->
           </div> <!-- End Floating menu -->

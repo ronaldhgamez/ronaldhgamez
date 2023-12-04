@@ -1,7 +1,7 @@
 import './styles/style.css'
 import './styles/icon_style.css'
 import './styles/bodyStyles.css'
-import './styles/header.css'
+import './styles/mobileHeader.css'
 
 // Set the HTML content to the desired element
 
@@ -32,24 +32,52 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </div>
       </div>
 
+
       <div class="mobileHeaderContent">
+        <!-- Hamburger menu -->
         <div class="navBarHamburger">
-          <input type="checkbox" id="toggleCheckbox">
-          <label for="toggleCheckbox" class="navBarHamburger">
-            <i class="menuIcon material-icons">menu</i>
+
+          <input type="checkbox" id="hamburgerCheckbox">
+          <label class="checkboxICons" for="hamburgerCheckbox">
+            <i class="menuIcon material-icons">menu</i> 
+            <i class="closeIcon material-icons">close</i>
           </label>
-          <!-- <i class="closeIcon material-icons">close</i> -->
-        </div>
-        <!-- Floating menu -->
-        <div id="mobileNavMenu">
+          
+          <!-- Floating menu -->
+          <div class="mobileNavMenu">
             <nav class="mobileNavOptions">
-              <a class="navOption"><span>Home</span></a>
+              <a class="navOption" href="/"><span>Home</span></a>
               <a class="navOption"><span>About Me</span></a>
               <a class="navOption"><span>Language</span></a>
-              <a class="navOption"><span>Theme</span></a>
               <a class="navOption"><span>Download CV</span></a>
             </nav>
-          </div>
+
+            <div id="appereanceDiv">
+              <span class="navOption">Theme</span>
+            </div>
+
+            <!-- Contact Icons -->
+            <div class="iconContainer">
+              <!-- Linkedin Icon Link -->
+              <a class="contactIcons" href="https://www.linkedin.com/in/ronaldhgamez/" aria-label="linkedin" target="_blank" rel="noopener">
+                <img alt="Linkedin Link" src="/src/svg/linkedin.svg" />
+              </a>  
+              <!-- Github Icon Link -->
+              <a class="contactIcons" href="https://github.com/ronaldhgamez" aria-label="github" target="_blank" rel="noopener">
+                <img alt="GitHub Link" src="/src/svg/github.svg" />
+              </a>
+              
+              <a class="color-icon" href="mailto:ronaldhgamez@gmail.com">
+                <img src="/src/svg/gmail.svg"/>
+              </a>
+
+              <!-- WhatsApp Icon Link -->
+              <a class="color-icon" href="https://wa.me/50664178996" aria-label="whatsapp" target="_blank" rel="noopener">
+                <img alt="Chat on WhatsApp" src="/src/svg/whatsapp.svg" />
+              </a>
+            </div> <!-- End Contact Icons -->
+          </div> <!-- End Floating menu -->
+        </div> <!-- End Hamburger menu -->
       </div>
 
     </div>

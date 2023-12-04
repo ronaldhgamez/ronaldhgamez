@@ -1,0 +1,99 @@
+.mobileHeaderContent {
+    display: none;
+    user-select: none;
+}
+
+.navBarHamburger {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
+    /* Disable blue highlight on tap for mobile devices */
+}
+
+.mobileNavMenu {
+    /* display: none; */
+    width: 350px;
+    height: 450px;
+    box-sizing: border-box;
+    padding-top: 40px;
+    box-shadow: 0px 1px 0px 1px rgb(0, 0, 0, 0.2);
+    position: absolute;
+    left: 50%;
+    top: 63px;
+    transform: translate(-50%, 0);
+    border-radius: 5px;
+}
+
+.menuIcon {
+    display: inline;
+    color: #dfdfd6;
+}
+
+.closeIcon {
+    display: none;
+    color: #9497f8;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: end;
+    height: 100px;
+    /* border: solid red; */
+    /* Disable blue highlight on tap for mobile devices */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.contactIcons {
+    filter: invert(0.7);
+}
+
+.color-icon {
+    filter: grayscale(40%);
+}
+
+#hamburgerCheckbox:checked ~ .mobileNavMenu,
+#hamburgerCheckbox:checked ~ .checkboxICons .closeIcon {
+    display: inline;
+}
+#hamburgerCheckbox:checked ~ .checkboxICons .menuIcon {
+    display: none;
+}
+
+/* Hides when click on close */
+#hamburgerCheckbox:not(:checked) ~ .mobileNavMenu {
+    display: none;
+}
+
+
+/* Media query for mobile devices (up to 767 pixels wide) */
+@media only screen and (max-width: 767px) {
+
+    .mobileHeaderContent {
+        display: inline;
+    }
+
+    .navOption {
+        padding: 0px 2vw;
+        height: 50px;
+        user-select: none;
+        border-bottom: solid 0.01px rgb(113, 113, 113, 0.2);
+        text-decoration: none;
+    }
+
+    .navOption:active {
+        padding-left: 20px;
+        -webkit-tap-highlight-color: transparent;
+        /* Disable blue highlight on tap for mobile devices */
+    }
+
+    /* aligt title to the left for mobile */
+    .title {
+        justify-content: left;
+        padding-left: 20px;
+    }
+}

@@ -25,7 +25,10 @@ body {
     color: #dfdfd6;
     cursor: pointer;
 }
-
+.title span {
+    font-weight: bold;
+    color:#9497f8;
+}
 .webHeaderContent {
     display: flex;
     position: relative;

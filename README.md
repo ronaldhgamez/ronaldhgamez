@@ -11,6 +11,7 @@ Please note that the portfolio is currently under development.
 
 ## Resources and references
 - [Dark Mode Toggle Switch](https://timetoprogram.com/dark-mode-toggle-switch-html-css/)
+- [Icons](https://iconos8.es/icons/)
 
 ## Technologies
 <div style="display: flex;">

@@ -1,37 +1,65 @@
 import './styles/style.css'
-import './styles/icon_style.css'
+import './styles/appereanceButtom.css'
 import './styles/bodyStyles.css'
 import './styles/mobileHeader.css'
+import './styles/languageMenu.css'
 
 // Set the HTML content to the desired element
 
 document.querySelector<HTMLDivElement>('#header')!.innerHTML = `
   <div class="container">
-    <div class="title"><a><span>{</span>Ronaldhg<span>}</span></a></div>
+    <!-- My title and logo -->
+    <div class="title">
+      <img width="50" height="50" src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/SourceCodeIcon.png"/>
+      <a><span>{</span>Ronaldhg<span>}</span></a>
+    </div>
+    <!-- [Header displayed for web users] -->
     <div class="webHeaderContent">
       <nav class="navBarMenu">
         <a class="navOption"><span>Home</span></a>
         <a class="navOption"><span>About Me</span></a>
-        <a class="navOption"><span>Language</span></a>
         <a class="navOption"><span>Download CV</span></a>
       </nav>
-
-      <div class="hundredpx">
-        <div>
-          <input type="checkbox" id="switch" />
-          <div class="switch-btn">
-            <label for="switch">
-              <div class="icons">
-                <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/moon-icon.png" alt="moon icon" />
-                <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/sun-icon.png" alt="sun icon" />
+      
+      <!-- Language Selection --> 
+      <div class="navBarTranslations">
+        <button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
+          <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/svg/translate.svg" alt="translate svg" width="20" height="20">
+          <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/svg/downArrow.svg" alt="down arrow svg" width="20" height="20">
+        </button>
+        <!-- Hiddend Menu Language -->
+        <div class="menuLanguages floatingMenu">
+          <div class="menuItems">
+              <p class="selectedLanguage">English</p>
+              <div class="language">
+                <a class="link" href="" target="_blank" rel="noreferrer">Español</a>
               </div>
-            </label>
+              <div class="language">
+                <a class="link" href="" target="_blank" rel="noreferrer">Portugues</a>
+              </div>
+              <div class="language">
+                <a class="link" href="" target="_blank" rel="noreferrer">English</a>
+              </div>
           </div>
         </div>
       </div>
+
+      <!-- Theme Mode Selection --> 
+      <div class="navBarAppereance">
+        <input type="checkbox" id="switch" />
+        <div class="switch-btn">
+          <label for="switch">
+            <div class="icons">
+              <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/moon-icon.png" alt="moon icon" />
+              <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/sun-icon.png" alt="sun icon" />
+            </div>
+          </label>
+        </div>
+      </div>
+      
     </div>
 
-
+    <!-- [Header displayed for mobile] -->
     <div class="mobileHeaderContent">
       <!-- Hamburger menu -->
       <div class="navBarHamburger">
@@ -96,9 +124,9 @@ document.querySelector<HTMLDivElement>('#header')!.innerHTML = `
 document.querySelector<HTMLDivElement>('#main')!.innerHTML = `
   <section class="projectsContainer">
     <div class="projectElement">
-      <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/WebProject.png" />
+      <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ConnectFour.png"/>
       <article class="projectArticle">
-        <h1>Titulo del proyecto</h1>
+        <h1>Connect Four Game</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend odio at dapibus commodo. Vivamus quis nisl id justo ultrices tincidunt. </p>
       </article>
     </div>

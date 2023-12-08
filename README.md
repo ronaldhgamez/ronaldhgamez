@@ -12,7 +12,7 @@ Discover more about me and my work by visiting my personal portfolio at:
 <div align="center">
   <img width="34" height="34" src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/SourceCodeIcon.png"/>
   <br>
-  <a href="https://ronaldhgamez.github.io/ronaldhgamez/">
+  <a href="https://ronaldhgamez.github.io/ronaldhgamez/" target="_blank">
     Ronald's Website
   </a>
   
@@ -65,7 +65,7 @@ Discover more about me and my work by visiting my personal portfolio at:
 </div>
 -->
 
-## 🔗 Contact
+## Contact
 
 
 <p align="center">
@@ -73,21 +73,21 @@ Discover more about me and my work by visiting my personal portfolio at:
 </p> 
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/ronaldhgamez/" target="_blank">
-    <img 
-      alt="Linkedin Link" 
-      width="50" height="50"
-      src="https://brand.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" 
-    />
-  </a>
-  <a href="mailto:ronaldhgamez@gmail.com" target="_blank">
+  <a href="mailto:ronaldhgamez@gmail.com">
     <img alt="Gmail icon contact" 
       src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/9db667a770ed44caed4542851cf3c46d9851f4cc/svg/gmail.svg"
     />
   </a>
-  <a href="https://wa.me/50664178996" target="_blank">
+  <a href="https://wa.me/50664178996">
     <img alt="Chat on WhatsApp" 
       src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/c634ec3e23d28e41ffe0a060bcfdd32855894947/svg/whatsapp.svg"
+    />
+  </a>
+  <a href="https://www.linkedin.com/in/ronaldhgamez/">
+    <img 
+      alt="Linkedin Link" 
+      width="50" height="50"
+      src="https://brand.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" 
     />
   </a>
 </div>

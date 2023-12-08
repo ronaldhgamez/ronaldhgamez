@@ -4,9 +4,6 @@
   <img alt="Typing text" src="">
 </picture>
 
-#
-<br>
-
 ## Who is Ronald?👨‍💻
 Computing engineer passionate about building full-stack applications with strong skills in UI/UX, ensuring that applications are functional and intuitive. Additionally, I specialize in building server-side applications using Node.js or Python.
 

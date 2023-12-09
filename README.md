@@ -17,9 +17,9 @@ Discover more about me and my work by visiting my personal portfolio at:
 
 ### | FrontEnd Stack
 
-<img src="https://skillicons.dev/icons?i=angular,html,css,vite,figma" width=372>
+<img src="https://skillicons.dev/icons?i=angular,vue,html,css,vite,figma" width=450>
 
-` Angular  `  `   HTML   `  `   CSS3   `  `   Vite   `  `   Figma   `
+` Angular  `  `  Vue.js  `  `   HTML   `  `   CSS3   `  `   Vite   `  `   Figma   `
 
 <br>
 

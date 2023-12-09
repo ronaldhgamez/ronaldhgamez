@@ -1,0 +1,75 @@
+#aboutContainer {
+    /* border: solid 1px blue; */
+    height: 650px;
+    box-sizing: border-box;
+    padding: 20px 100px;
+}
+
+.aboutTitle {
+    /* border: solid 1px yellow; */
+    color: #dfdfd6;
+    padding-left: 20px;
+}
+
+.aboutContent {
+    position: relative;
+    display: flex;
+    /* border: solid 1px yellow; */
+    height: 80%;
+}
+
+.contentMain {
+    /* border: solid 1px green; */
+    height: 100%;
+    width: 65%;
+}
+
+.contentAside {
+    /* border: solid 1px green; */
+    height: 100%;
+    width: 35%;
+}
+
+.paragraph {
+    color: #dfdfd6;
+    /* border-bottom: solid 1px red; */
+    text-wrap: pretty;
+    /* white-space: pre-wrap; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+
+.asideContainer {
+    display: flex;
+    justify-content: center;
+    border-left: solid 1px rgb(255, 255, 255, 0.1);
+    /* border-bottom: solid 1px blue; */
+}
+
+/* Image container */
+.asideContainer:first-child img {
+    border-radius: 100px;
+    border: solid 2px rgb(128,128,128,0.5);
+    filter: grayscale(25%);
+}
+
+.asideInfo {
+    /* border: solid 1px blue; */
+    width: 70%;
+    height: 250px;
+}
+
+.asideInfo h2 {
+    color: #dfdfd6;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.asideInfo p {
+    color: #dfdfd6;
+    font-size: 14px;
+    margin-left: -19px;
+}

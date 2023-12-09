@@ -3,21 +3,21 @@ import './styles/appereanceButtom.css'
 import './styles/bodyStyles.css'
 import './styles/mobileHeader.css'
 import './styles/languageMenu.css'
+import './styles/aboutme.css'
 
-// Set the HTML content to the desired element
 
 document.querySelector<HTMLDivElement>('#header')!.innerHTML = `
   <div class="container">
     <!-- My title and logo -->
     <div class="title">
-      <img width="50" height="50" src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/SourceCodeIcon.png"/>
+      <img width="40" height="40" src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/SourceCodeIcon.png"/>
       <a><span>{</span>Ronaldhg<span>}</span></a>
     </div>
     <!-- [Header displayed for web users] -->
     <div class="webHeaderContent">
       <nav class="navBarMenu">
-        <a class="navOption"><span>Home</span></a>
-        <a class="navOption"><span>About Me</span></a>
+        <a id="homeTab" class="navOption"><span>Home</span></a>
+        <a id="aboutMeTab" class="navOption"><span>About Me</span></a>
         <a class="navOption"><span>Download CV</span></a>
       </nav>
       
@@ -73,8 +73,8 @@ document.querySelector<HTMLDivElement>('#header')!.innerHTML = `
         <!-- Floating menu -->
         <div class="mobileNavMenu">
           <nav class="mobileNavOptions">
-            <a class="navOption" href="/ronaldhgamez/"><span>Home</span></a>
-            <a class="navOption"><span>About Me</span></a>
+            <a id="homeTab" class="navOption"><span>Home</span></a>
+            <a id="aboutMeTab" class="navOption"><span>About Me</span></a>
             <a class="navOption"><span>Language</span></a>
             <a class="navOption"><span>Download CV</span></a>
           </nav>
@@ -121,7 +121,11 @@ document.querySelector<HTMLDivElement>('#header')!.innerHTML = `
   </div>
 `
 
-document.querySelector<HTMLDivElement>('#main')!.innerHTML = `
+function selectTab(tabSelected: string) {
+  document.querySelector<HTMLDivElement>('#main')!.innerHTML = tabSelected;
+}
+
+const homeTab: string = `
   <section class="projectsContainer">
     <div class="projectElement">
       <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ConnectFour.png"/>
@@ -144,21 +148,50 @@ document.querySelector<HTMLDivElement>('#main')!.innerHTML = `
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend odio at dapibus commodo. </p>
       </article>
     </div>
-    <div class="projectElement">
-      <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/WebProject.png" />
-      <article class="projectArticle">
-        <h1>Titulo del proyecto</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend odio at dapibus commodo. Vivamus quis nisl id justo ultrices tincidunt. Fusce euismod, velit id bibendum cursus.</p>
-      </article>
-    </div>
-    <div class="projectElement">
-      <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/WebProject.png" />
-      <article class="projectArticle">
-        <h1>Titulo del proyecto</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend odio at dapibus commodo. Vivamus quis nisl id justo ultrices tincidunt. Fusce euismod, velit id bibendum cursus.</p>
-      </article>
-    </div>
   </section>
 `
-// <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/WebProject.png" />
-// https://www.weebly.com/?c=mkt_w_chnl:aff_geo:all_prtnr:sas_subprtnr:2841123_camp:brand_adtype:txtlnk_ag:weebly_lptype:pdsite_var:366125&sscid=b1k7_14dcs8&utm_source=ShareASale
+
+const aboutMeTab: string = `
+  <div id="aboutContainer">
+    <h1 class="aboutTitle">About Me</h1>
+    <div class="aboutContent">
+      <main class="contentMain">
+        <p class="paragraph">
+          Computing engineer passionate about building full-stack applications with strong skills in UI/UX, ensuring that applications are functional and intuitive. Additionally, I specialize in building server-side applications using Node.js or Python.
+        </p>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        
+      </main>
+      <aside class="contentAside">
+        <div class="asideContainer">
+          <img src="https://avatars.githubusercontent.com/u/66141333?v=4" alt="" width="200">
+        </div>
+        <div class="asideContainer">
+          <div class="asideInfo">
+            <h2>Ronald Herrera Gámez</h2>
+            <p>
+              <svg fill="orange" width="10px" height="10px" viewBox="0 0 395.71 395.71">
+                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738   c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388   C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191   c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"/>
+              </svg>
+              Alajuela, Costa Rica
+            </p>
+            <p></p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+`
+
+selectTab(homeTab);
+
+// Attach click event listeners
+document.getElementById("homeTab")!.addEventListener("click", () => selectTab(homeTab));
+
+document.getElementById("aboutMeTab")!.addEventListener("click", () => selectTab(aboutMeTab));

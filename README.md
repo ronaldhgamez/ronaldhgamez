@@ -1,8 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?lines=Hi%20there!&font=Fira%20Code&center=false&width=440&height=45&color=ebf5fb&vCenter=false&pause=500&size=24">
-  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com/?lines=Hi%20there!&font=Fira%20Code&center=false&width=440&height=45&color=0a376f&vCenter=false&pause=500&size=24">
-  <img alt="Typing text" src="">
-</picture>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=1500&pause=500&color=9497F8&repeat=false&random=false&width=500&separator=%3C&lines=console.log(welcomeMsg);%3CHi%2C+there!%F0%9F%91%8B%F0%9F%8F%BB)](https://git.io/typing-svg)
 
 ## Who is Ronald?👨‍💻
 Computing engineer passionate about building full-stack applications with strong skills in UI/UX, ensuring that applications are functional and intuitive. Additionally, I specialize in building server-side applications using Node.js or Python.
@@ -15,58 +11,36 @@ Discover more about me and my work by visiting my personal portfolio at:
   <a href="https://ronaldhgamez.github.io/ronaldhgamez/" target="_blank">
     Ronald's Website
   </a>
-  
 </div>
 
 ## Summary Skills
 
 ### | FrontEnd Stack
 
-<img src="https://skillicons.dev/icons?i=angular,html,css,vite,figma"/>
+<img src="https://skillicons.dev/icons?i=angular,html,css,vite,figma" width=372>
 
-<!--
-<div style="display: flex; font-size: 10px;">
-  <p style="margin-left: 1px; width:46px; text-align:center">Angular</p>
-  <p style="margin-left: 9px; width:46px; text-align:center">HTML5</p>
-  <p style="margin-left: 11px; width:46px; text-align:center">CSS3</p>
-  <p style="margin-left: 10px; width:46px; text-align:center">Vite</p>
-  <p style="margin-left: 10px; width:46px; text-align:center">Figma</p>
-</div>
--->
+` Angular  `  `   HTML   `  `   CSS3   `  `   Vite   `  `   Figma   `
 
-### | Backend Stack
-<img src="https://skillicons.dev/icons?i=nodejs,expressjs,postgres,postman,firebase,mongo&perline=10" />
-
-<!--
-<div style="display:flex; font-size: 10px;">
-  <p style="margin-left: 3px; width:46px; text-align:center">Node.js</p>
-  <p style="margin-left: 9px; width:46px; text-align:center">Express</p>
-  <p style="margin-left: 9px; width:46px; text-align:center">Postgre SQL</p>
-  <p style="margin-left: 12px; width:46px; text-align:center">Postman</p>
-  <p style="margin-left: 9px; width:46px; text-align:center">Firebase</p>
-  <p style="margin-left: 9px; width:46px; text-align:center">MongoDB</p>
-</div>
--->
-
-### | Other technologies
-<img src="https://skillicons.dev/icons?i=python,js,ts,java,cpp,cs,github,powershell&perline=10" />
 <br>
 
-<!--
-<div style="display: flex; font-size: 10px;">
-  <p style="margin-left: 3px; width:46px; text-align:center">Python</p>
-  <p style="margin-left: 9px; width:46px; text-align:center">JavaScript</p>
-  <p style="margin-left: 9px; width:46px; text-align:center">TypeScript</p>
-  <p style="margin-left: 12px; width:46px; text-align:center">Java</p>
-  <p style="margin-left: 11px; width:46px; text-align:center">C++</p>
-  <p style="margin-left: 9px; width:46px; text-align:center">C#</p>
-  <p style="margin-left: 9px; width:46px; text-align:center">GitHub</p>
-  <p style="margin-left: 9px; width:47px; text-align:center">Powershell</p>
-</div>
--->
+### | Backend Stack
+<img src="https://skillicons.dev/icons?i=nodejs,postgres,expressjs,firebase,mongo,postman" width=450/>
+
+`  Nodejs  `  `Postgres`  ` Express  `  ` Firebase  `  ` MongoDB  `  `  Postman  `
+
+<br>
+
+
+### | Other technologies
+
+<img src="https://skillicons.dev/icons?i=python,java,cpp,cs,github,js,ts,powershell&perline=10" width=608 />
+
+`  Python  ` `   Java   `  `    C++   `  `    C#     `  `  GitHub  `  `J.Script`   `T.Script` `Powershell` 
+
+<br>
+
 
 ## Contact
-
 
 <p align="center">
   <img src="https://media4.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gif?cid=ecf05e47jxei2w60yg7jddvl91vd8be9jfp42dtlurldkfc0&rid=giphy.gif&ct=s" width="140"/>
@@ -74,15 +48,15 @@ Discover more about me and my work by visiting my personal portfolio at:
 
 <div align="center">
   <a href="mailto:ronaldhgamez@gmail.com">
-    <img alt="Gmail icon contact" 
-      src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/9db667a770ed44caed4542851cf3c46d9851f4cc/svg/gmail.svg"
-    />
+    <img alt="Gmail icon contact" src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/9db667a770ed44caed4542851cf3c46d9851f4cc/svg/gmail.svg"/>
   </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://wa.me/50664178996">
     <img alt="Chat on WhatsApp" 
       src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/c634ec3e23d28e41ffe0a060bcfdd32855894947/svg/whatsapp.svg"
     />
   </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/ronaldhgamez/">
     <img 
       alt="Linkedin Link" 

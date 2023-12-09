@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=1500&pause=500&color=9497F8&repeat=false&random=false&width=500&separator=%3C&lines=console.log(welcomeMsg);%3CHi%2C+there!%F0%9F%91%8B%F0%9F%8F%BB)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=2500&pause=1000&color=9497F8&repeat=false&random=false&width=500&separator=%3C&lines=console.log(welcomeMsg);%3CHi%2C+there!%F0%9F%91%8B%F0%9F%8F%BB)](https://git.io/typing-svg)
 
 ## Who is Ronald?👨‍💻
 Computing engineer passionate about building full-stack applications with strong skills in UI/UX, ensuring that applications are functional and intuitive. Additionally, I specialize in building server-side applications using Node.js or Python.

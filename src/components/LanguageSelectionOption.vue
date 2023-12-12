@@ -1,3 +1,40 @@
+<template>
+    <div class="navBarTranslations">
+        <button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
+            <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/svg/translate.svg"
+                alt="translate svg" width="20" height="20">
+            <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/svg/downArrow.svg"
+                alt="down arrow svg" width="20" height="20">
+        </button>
+        <!-- Hiddend Menu Language -->
+        <div class="menuLanguages floatingMenu">
+            <div class="menuItems">
+                <p class="selectedLanguage">English</p>
+                <div class="language">
+                    <a class="link" href="" target="_blank" rel="noreferrer">Español</a>
+                </div>
+                <div class="language">
+                    <a class="link" href="" target="_blank" rel="noreferrer">Portugues</a>
+                </div>
+                <div class="language">
+                    <a class="link" href="" target="_blank" rel="noreferrer">English</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+<script lang="ts">
+    export default {
+        name: 'language-selection-option'
+    }
+</script>
+
+
+<style>
+/* Language menu */
+
 .navBarTranslations {
     display: flex;
     align-items: center;
@@ -85,5 +122,5 @@
 
 .language:hover a {
     color: #9497f8;
-    ;
 }
+</style>

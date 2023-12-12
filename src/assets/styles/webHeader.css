@@ -1,17 +1,9 @@
-body {
-    margin: 0;
-    background-color: rgb(27, 27, 31, 1);
-    /* background-color: #ffffff; */
-    font-size: 16px;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-
-/* Padding */
 .container {
     display: flex;
     border-bottom-style: solid;
     border-bottom-width: 0.5px;
     width: 100%;
+    /* max-width: 1500px; */
     box-sizing: border-box;
     /* Add a padding in the web header */
     padding-right: 25px;
@@ -29,9 +21,11 @@ body {
     color: #dfdfd6;
     cursor: pointer;
 }
+
 .title span {
     color:#9497f8;
 }
+
 .webHeaderContent {
     display: flex;
     position: relative;
@@ -50,6 +44,7 @@ body {
     cursor: pointer;
     color: #dfdfd6;
     user-select: none;
+    text-decoration: none;
 }
 
 .navOption:hover {
@@ -74,6 +69,7 @@ body {
     width: 100px;
 }
 
+
 /* .link {
     display: flex;
     align-items: center;
@@ -92,7 +88,7 @@ body {
         padding-right: 0;
     }
     .title {
-        padding-left: 10px;
+        padding-left: 20px;
         gap: 10px;
     }
 }

@@ -13,9 +13,9 @@
     <!-- [Header displayed for web users] -->
     <div class="webHeaderContent">
       <nav class="navBarMenu">
-        <router-link class="navOption" to="/"><span>Home</span></router-link>
-        <router-link class="navOption" to="/about"><span>About Me</span></router-link>
-        <router-link class="navOption" to="/about"><span>Download CV</span></router-link>
+        <router-link class="navOption" to="/"><span> {{ $t("appView.home") }} </span></router-link>
+        <router-link class="navOption" to="/about"><span> {{ $t("appView.about") }} </span></router-link>
+        <router-link class="navOption" to="/resume"><span> {{ $t("appView.resume") }} </span></router-link>
       </nav>
       <!-- Language Selection -->
       <language-selection-option></language-selection-option>
@@ -37,10 +37,9 @@
         <!-- Floating menu -->
         <div class="mobileNavMenu">
           <nav class="mobileNavOptions">
-            <router-link class="navOption" to="/"><span>Home</span></router-link>
-            <router-link class="navOption" to="/about"><span>About Me</span></router-link>
-            <router-link class="navOption" to="/about"><span>Language</span></router-link>
-            <router-link class="navOption" to="/about"><span>Download CV</span></router-link>
+            <router-link class="navOption" to="/"><span> {{ $t("appView.home") }} </span></router-link>
+            <router-link class="navOption" to="/about"><span> {{ $t("appView.about") }}  </span></router-link>
+            <router-link class="navOption" to="/resume"><span> {{ $t("appView.resume") }} </span></router-link>
           </nav>
 
           <div id="appereanceDiv">

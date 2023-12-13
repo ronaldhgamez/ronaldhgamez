@@ -1,6 +1,6 @@
 <template>
     <div id="aboutContainer">
-        <h1 class="aboutTitle">About Me</h1>
+        <h1 class="aboutTitle"> {{ $t("appView.about") }}  </h1>
         <div class="aboutContent">
             <main class="contentMain">
                 <p class="paragraph">
@@ -23,13 +23,13 @@
                     <div class="asideInfo">
                         <h2>Ronald Herrera Gámez</h2>
                         <p>
-                            <svg fill="orange" width="10px" height="10px" viewBox="0 0 395.71 395.71">
-                                <path
-                                    d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738   c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388   C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191   c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" />
-                            </svg>
+                            <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/244cc277fcd3100d77374f3b3893fd5ba68d01e8/svg/ubication.svg" alt="" width="20px" height="11px">
                             Alajuela, Costa Rica
                         </p>
-                        <p></p>
+                        <p>
+                            <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/cc98e0b27531e07d4f007a99ffa9429f52593fb5/svg/costaricaFlag.svg" alt="" width="20px" height="11px">
+                            6010 2586
+                        </p>
                     </div>
                 </div>
             </aside>
@@ -63,8 +63,12 @@ export default {
 
 .aboutTitle {
     /* border: solid 1px yellow; */
-    color: #dfdfd6;
+    font-size: 40px;
     padding-left: 20px;
+    background: -webkit-linear-gradient(#262ce4, #dfdfd6);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .aboutContent {
@@ -126,7 +130,7 @@ export default {
 
 .asideInfo p {
     color: #dfdfd6;
-    font-size: 14px;
+    font-size: 12px;
     margin-left: -19px;
 }
 </style>

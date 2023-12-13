@@ -9,15 +9,11 @@
         <!-- Hiddend Menu Language -->
         <div class="menuLanguages floatingMenu">
             <div class="menuItems">
-                <p class="selectedLanguage">English</p>
-                <div class="language">
-                    <a class="link" href="" target="_blank" rel="noreferrer">Español</a>
-                </div>
-                <div class="language">
-                    <a class="link" href="" target="_blank" rel="noreferrer">Portugues</a>
-                </div>
-                <div class="language">
-                    <a class="link" href="" target="_blank" rel="noreferrer">English</a>
+                <p class="selectedLanguage">{{ langOptions[selectedLang as keyof typeof langOptions] }}</p>
+                <div v-for="lang in removeSelectedLanguageList()" :key="lang">
+                    <div class="language" v-on:click="changeLanguage(lang)">
+                        <a class="langOption"> {{ langOptions[lang as keyof typeof langOptions] }} </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -27,7 +23,31 @@
 
 <script lang="ts">
     export default {
-        name: 'language-selection-option'
+        name: 'language-selection-option',
+        data() {
+            return {
+                selectedLang: 'en',
+                langOptions: {
+                    en: 'English',
+                    sp: 'Español',
+                    ja: '日本語'
+                }
+            }
+        },
+        methods: {
+            removeSelectedLanguageList(): string[] {
+                // Convert the keys of langOptions to an array
+                const langOptionsArray: string[] = Object.keys(this.langOptions);
+                // Filter the array to remove the selected language
+                const filteredLangOptions = langOptionsArray.filter(langKey => langKey !== this.selectedLang);
+                // Now you can use filteredLangOptions as needed
+                return filteredLangOptions;
+            },
+            changeLanguage(lang: string) {
+                this.selectedLang = lang;
+                this.$i18n.locale = lang;
+            }
+        }
     }
 </script>
 
@@ -76,7 +96,7 @@
     z-index: 3;
     position: absolute;
     top: 46px;
-    right: 100px;
+    right: 65px;
 }
 
 /* Displays menu when hower on button */
@@ -111,16 +131,21 @@
     transition: 0.2s;
     background-color: rgb(113, 113, 113, 0.2);
     color: red;
+    cursor: pointer;
 }
 
-.language a {
+.language:hover .langOption {
+    color: #9497f8;
+}
+
+.langOption {
     font-size: 13px;
     font-weight: bold;
     text-decoration: none;
     color: #dfdfd6;
 }
 
-.language:hover a {
-    color: #9497f8;
+.link {
+    user-select: none;
 }
 </style>

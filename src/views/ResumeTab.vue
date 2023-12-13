@@ -16,12 +16,12 @@ export default {
 
 </style> -->
 <template>
-    <div>
+    <!-- <div>
         <pdf :src="pdfUrl" :page="1"></pdf>
-    </div>
+    </div> -->
 </template>
   
-<script lang="ts">
+<!-- <script lang="ts">
 import { pdf } from 'vue-pdf';
 
 export default {
@@ -34,7 +34,7 @@ export default {
         };
     }
 };
-</script>
+</script> -->
   
 <style>
 .pdf-container {

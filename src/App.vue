@@ -2,13 +2,13 @@
 
   <div class="container">
     <!-- Title and logo -->
-    <div class="title">
+    <router-link class="title" to="/">
       <img 
         width="40" height="40"
         src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/SourceCodeIcon.png" 
       />
       <a><span>{</span>Ronaldhg<span>}</span></a>
-    </div>
+    </router-link>
 
     <!-- [Header displayed for web users] -->
     <div class="webHeaderContent">
@@ -16,6 +16,7 @@
         <router-link class="navOption" to="/"><span> {{ $t("appView.home") }} </span></router-link>
         <router-link class="navOption" to="/about"><span> {{ $t("appView.about") }} </span></router-link>
         <router-link class="navOption" to="/resume"><span> {{ $t("appView.resume") }} </span></router-link>
+        <router-link class="navOption" to="/test"><span> Test </span></router-link>
       </nav>
       <!-- Language Selection -->
       <language-selection-option></language-selection-option>

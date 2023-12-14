@@ -1,6 +1,6 @@
 <template>
     <div class="navBarAppereance">
-        <input type="checkbox" id="switch" />
+        <input @change="changeTheme()" type="checkbox" id="switch" />
         <div class="switch-btn">
             <label for="switch">
                 <div class="icons">
@@ -16,7 +16,18 @@
 
 <script lang="ts">
     export default {
-        name: 'toggle-button-theme'
+        name: 'toggle-button-theme',
+        methods: {
+            changeTheme() {
+                const element = document.getElementById('app');
+                
+                //document.getElementById('app')?.classList.add('light');
+                console.log(element?.style.light)
+
+                //let darkMode: 'true' | 'false' = (localStorage.getItem("darkMode") == 'true') ? 'false' : 'true';
+                //localStorage.setItem("darkMode", darkMode);
+            },
+        }
     }
 </script>
 
@@ -91,7 +102,6 @@ label {
 input[type="checkbox"]:checked~.switch-btn {
     background: #c6c6c6;
     border: 1px solid #1b1b1f;
-    ;
 }
 
 /* Switch to light mode */

@@ -1,110 +1,167 @@
 <template>
-    <section class="projectsContainer">
-        <div v-for="project in projects" class="projectElement">
-            <img v-bind:src="project.image" />
-            <article class="projectArticle">
-                <h1> {{ project.title }} </h1>
-                <p> {{ project.description }} </p>
-            </article>
+    <div class="projectsTab">
+        <div v-for="project in projects">
+            <section class="projectElement">
+                <img 
+                    alt="Project image"
+                    class="projectImage" 
+                    v-bind:src="project.image" 
+                />
+                <div class="projectInfoContainer">
+                    <article class="article">
+                        <h1 class="title"> {{ project.title }} </h1>
+                        <p class="description">{{ project.description }} </p>
+                    </article>
+                    <div class="sourceIcon">
+                        <router-link class="sourceCode" v-bind:to="project.href">
+                            <img 
+                                alt="See details icon"
+                                width="30" height="35"
+                                src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/SourceCodeIcon.png"
+                            />
+                        </router-link>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
 </template>
 
 <script lang="ts">
 export default {
     name: 'home-tab',
+    methods: {
+
+    },
     data() {
         return {
             projects: [
                 {
                     id: 'p1',
-                    title: 'Connect Four Game',
+                    title: 'Connect Four 🔴 Web Board Game 🟡',
                     image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ConnectFour.png',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend odio at dapibus commodo. Vivamus quis nisl id justo ultrices tincidunt.'
+                    description: 'Game logic for the board game "Connect 4". Try to play against this AI and beat it!',
+                    href: '/test'
                 },
                 {
                     id: 'p2',
-                    title: 'Project title here',
-                    image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/WebProject.png',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend odio at dapibus commodo. Vivamus quis nisl id justo ultrices tincidunt.'
+                    title: 'Schedule Generator 📅 | Java, Prolog & SQLite',
+                    image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ScheduleGenerator.png',
+                    description: 'Desktop app to combinations of university schedules considering professors, subjects taught by professors, classrooms, and availability schedules of both professors and classrooms.',
+                    href: '/test'
                 },
                 {
                     id: 'p2',
-                    title: 'Project title here',
-                    image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/WebProject.png',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend odio at dapibus commodo. Vivamus quis nisl id justo ultrices tincidunt.'
+                    title: 'Face recognition - Classroom Attendance',
+                    image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/FaceRecognition.png',
+                    description: 'Face recognition application in Python. https://colab.research.google.com/drive/1QBLXJ011o6r_0F7gbYSMAaoJUelF3eeg?usp=sharing',
+                    href: '/test'
                 }
             ]
         }
-    }   
+    }
 }
 </script>
 
-<style>
-.projectsContainer {
+<style scoped>
+.projectsTab {
+    /* border: solid 1px #9497f8; */
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    /* border-color: wheat; */
-    /* border-style: dashed; */
     padding: 50px 20px;
-    box-sizing: border-box;
-    z-index: 0;
-}
-
-.projectElement:hover {
-    filter: contrast(120%);
-    transition: 0.5s;
 }
 
 .projectElement {
-    box-sizing: border-box;
-    background-color: #202127;
-    /* border: solid red; */
-    width: 100vh;
-    max-width: 475px;
-    height: 266px;
+    /* border: solid 1px #dfdfd6; */
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    height: 300px;
     border-radius: 8px;
+    /* Ocults image borders */
+    overflow: hidden;
 }
 
-.projectElement img {
+.projectElement:hover {
+    transition: 0.5s;
+    box-shadow: 1px 3px 12px #9497f8;
+}
+
+.projectImage {
     width: 100%;
-    /* border: solid blue; */
-    height: 70%;
+    height: 210px;
     /* Ensures the image covers the entire space, preserving aspect ratio */
     object-fit: cover;
 }
 
-.projectElement img:hover {
-    filter: grayscale(0);
+.projectInfoContainer {
+    /* border: dotted 1px red; */
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
 }
 
-.projectArticle {
-    width: 100%;
-    /* border: solid green; */
-    height: 26%;
+.article {
+    width: 85%;
+    /* border: dotted #9497f8; */
     color: #dfdfd6;
+    overflow: hidden;
 }
 
-.projectArticle h1,
-p {
+/* .projectElement:hover .title {
+    
+}
+ */
+
+.title {
+    /* border: dotted green; */
     margin: 0;
-    padding: 1px 5px;
-}
-
-.projectArticle h1 {
-    font-size: 18px;
-    height: 28%;
+    font-size: 17px;
+    height: auto;
+    width: auto;
+    padding: 10px 0 2px 10px;
+    border-bottom: solid 1px rgb(255, 255, 255, 0.1);
     /* For titles */
     text-wrap: balance;
 }
 
-.projectArticle p {
+.description {
+    /* border: solid 0.5px pink; */
+    margin: 0;
+    padding: 0px 10px;
     overflow: hidden;
     text-wrap: pretty;
-    /* border: solid 0.5px pink; */
-    height: 68%;
+    height: 67%;
     font-size: 13px;
+}
+
+.sourceIcon {
+    /* border: solid 1px pink;  */
+    align-self: center;
+    /* Add left and right margen only */
+    margin: 0 auto;
+    cursor: pointer;
+    filter: grayscale(1);
+    /* Circle on svg */
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    /* Center image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sourceIcon:hover {
+    box-shadow: 0 0 0 1px #9497f8 inset;
+    filter: grayscale(40%);
+    transition: 0.5s;
+}
+
+.sourceIcon:active {
+    filter: grayscale(0);
 }
 </style>

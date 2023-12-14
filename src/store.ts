@@ -1,4 +1,4 @@
-import { createStore } from "../node_modules/vuex";
+/* import { createStore } from "../node_modules/vuex";
 
 
 export const state = {
@@ -22,4 +22,4 @@ let store = createStore({
     }
 })
 
-export default store as any;
+export default store as any; */

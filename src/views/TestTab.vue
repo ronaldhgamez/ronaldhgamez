@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Test Tab</h1>
-        <span>Dark mode: {{ this.$store.state.darkMode }} </span>
+        <span>Dark mode: </span>
         <button @click="toggleDarkMode">Change</button>
     </div>
 </template>
@@ -12,7 +12,7 @@ export default {
     name: 'test-tab',
     methods: {
         toggleDarkMode() {
-            this.$store.commit('toggleAppereanceMode');
+            /* this.$store.commit('toggleAppereanceMode'); */
         },
     }
 }

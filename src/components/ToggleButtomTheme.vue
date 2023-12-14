@@ -19,10 +19,10 @@
         name: 'toggle-button-theme',
         methods: {
             changeTheme() {
-                const element = document.getElementById('app');
+                /* const element = document.getElementById('app'); */
                 
                 //document.getElementById('app')?.classList.add('light');
-                console.log(element?.style.light)
+                /* console.log(element?.style.light) */
 
                 //let darkMode: 'true' | 'false' = (localStorage.getItem("darkMode") == 'true') ? 'false' : 'true';
                 //localStorage.setItem("darkMode", darkMode);

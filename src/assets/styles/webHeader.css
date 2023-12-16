@@ -2,6 +2,7 @@
     display: flex;
     border-bottom-style: solid;
     border-bottom-width: 0.5px;
+    color: rgb(0, 0, 0, 0.4);
     width: 100%;
     /* max-width: 1500px; */
     box-sizing: border-box;
@@ -18,9 +19,9 @@
     font-size: 18px;
     font-weight: bold;
     width: 450px;
-    color: #dfdfd6;
     cursor: pointer;
     text-decoration: none;
+    color: var(--text-color);
 }
 
 .title span {
@@ -43,7 +44,7 @@
     padding: 0px 12px;
     /* left and right only */
     cursor: pointer;
-    color: #dfdfd6;
+    color: var(--text-color);
     user-select: none;
     text-decoration: none;
 }

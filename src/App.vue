@@ -16,7 +16,7 @@
         <router-link class="navOption" to="/"><span> {{ $t("appView.home") }} </span></router-link>
         <router-link class="navOption" to="/about"><span> {{ $t("appView.about") }} </span></router-link>
         <router-link class="navOption" to="/resume"><span> {{ $t("appView.resume") }} </span></router-link>
-        <router-link class="navOption" to="/test"><span> Test </span></router-link>
+        <!-- <router-link class="navOption" to="/test"><span> Test </span></router-link> -->
       </nav>
       <!-- Language Selection -->
       <language-selection-option></language-selection-option>
@@ -82,15 +82,7 @@
         </div> <!-- End Floating menu -->
       </div> <!-- End Hamburger menu -->
     </div>
-
   </div>
-
-  <!-- <a href="https://vitejs.dev" target="_blank">
-    <img src="/vite.svg" class="logo" alt="Vite logo" />
-  </a>
-  <a href="https://vuejs.org/" target="_blank">
-    <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-  </a> -->
 
   <router-view></router-view>
 </template>
@@ -119,9 +111,6 @@ export default {
 
 
 <style>
-@import url('./assets/styles/webHeader.css');
-@import url('./assets/styles/mobileHeader.css');
-
 
 /* .logo {
   height: 6em;

@@ -1,21 +1,26 @@
 :root {
   --theme-color: rgb(27, 27, 31, 1);
   --text-color: #dfdfd6;
+  --filter-svg: invert(0);
+}
+
+:root .dark {
+  --theme-color: rgb(27, 27, 31, 1);
+  --text-color: #dfdfd6;
+  --filter-svg: invert(0);
+}
+
+:root .light {
+  --theme-color: #ffffff;;
+  --text-color: rgb(27, 27, 31, 1);
+  --filter-svg: invert(1);
 }
 
 body {
   margin: 0;
-  background-color: var(--theme-color);
   font-size: 16px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
 
-.dark {
-  --theme-color: rgb(27, 27, 31, 1);
-  --text-color: #dfdfd6;
-}
-
-.light {
-  --theme-color: #ffffff;;
-  --text-color: black;
+  background-color: var(--theme-color);
+  color: var(--text-color);
 }

@@ -25,15 +25,4 @@ div {
     align-items: center;
     flex-direction: column;
 }
-
-h1,
-span {
-    color: white;
-}
-
-/* Your component styles */
-.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
 </style>

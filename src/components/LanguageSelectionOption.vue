@@ -1,10 +1,18 @@
 <template>
     <div class="navBarTranslations">
         <button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
-            <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/svg/translate.svg"
-                alt="translate svg" width="20" height="20">
-            <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/svg/downArrow.svg"
-                alt="down arrow svg" width="20" height="20">
+            <img 
+                class="icon"
+                src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/svg/translate.svg"
+                alt="translate svg" 
+                width="20"
+                height="20">
+            <img
+                class="icon"
+                src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/svg/downArrow.svg"
+                alt="down arrow svg" 
+                width="20" 
+                height="18">
         </button>
         <!-- Hiddend Menu Language -->
         <div class="menuLanguages floatingMenu">
@@ -26,13 +34,16 @@
         name: 'language-selection-option',
         data() {
             return {
-                selectedLang: 'en',
+                selectedLang: localStorage.getItem('lang') || 'en',
                 langOptions: {
                     en: 'English',
                     sp: 'Español',
                     ja: '日本語'
                 }
             }
+        },
+        mounted() {
+            this.changeLanguage(this.selectedLang)
         },
         methods: {
             removeSelectedLanguageList(): string[] {
@@ -46,6 +57,7 @@
             changeLanguage(lang: string) {
                 this.selectedLang = lang;
                 this.$i18n.locale = lang;
+                localStorage.setItem('lang', lang)
             }
         }
     }
@@ -61,7 +73,7 @@
 }
 
 .selectedLanguage {
-    color: #dfdfd6;
+    color: var(--text-color);
 }
 
 .button {
@@ -80,13 +92,17 @@
     transition: border 0.2s, opacity 0.1s;
 }
 
+.icon {
+    filter: var(--filter-svg);
+}
+
 .menuLanguages {
     /* center menu items with flex */
     display: none;
     justify-content: center;
     align-items: center;
     border: solid 1px rgb(128, 128, 128, 0.2);
-    background: rgb(32, 33, 39, 1);
+    background: var(--theme-color);
     width: 130px;
     height: 150px;
     border-radius: 10px;
@@ -95,7 +111,7 @@
 .floatingMenu {
     z-index: 3;
     position: absolute;
-    top: 46px;
+    top: 44px;
     right: 65px;
 }
 
@@ -130,7 +146,6 @@
 .language:hover {
     transition: 0.2s;
     background-color: rgb(113, 113, 113, 0.2);
-    color: red;
     cursor: pointer;
 }
 
@@ -142,7 +157,7 @@
     font-size: 13px;
     font-weight: bold;
     text-decoration: none;
-    color: #dfdfd6;
+    color: var(--text-color);
 }
 
 .link {

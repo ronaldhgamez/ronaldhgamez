@@ -10,7 +10,7 @@
                 <div class="projectInfoContainer">
                     <article class="article">
                         <h1 class="title"> {{ project.title }} </h1>
-                        <p class="description">{{ project.description }} </p>
+                        <p class="description"> {{ project.description }} </p>
                     </article>
                     <div class="sourceIcon">
                         <router-link class="sourceCode" v-bind:to="project.href">
@@ -30,31 +30,28 @@
 <script lang="ts">
 export default {
     name: 'home-tab',
-    methods: {
-
-    },
     data() {
         return {
             projects: [
                 {
                     id: 'p1',
-                    title: 'Connect Four 🔴 Web Board Game 🟡',
+                    title: this.$t("p1.title"),
+                    description: this.$t("p1.description"),
                     image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ConnectFour.png',
-                    description: 'Game logic for the board game "Connect 4". Try to play against this AI and beat it!',
                     href: '/test'
                 },
                 {
                     id: 'p2',
-                    title: 'Schedule Generator 📅 | Java, Prolog & SQLite',
+                    title: this.$t("p2.title"),
+                    description: this.$t("p2.description"),
                     image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ScheduleGenerator.png',
-                    description: 'Desktop app to combinations of university schedules considering professors, subjects taught by professors, classrooms, and availability schedules of both professors and classrooms.',
                     href: '/test'
                 },
                 {
                     id: 'p2',
-                    title: 'Face recognition - Classroom Attendance',
+                    title: this.$t("p3.title"),
+                    description: this.$t("p3.description"),
                     image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/FaceRecognition.png',
-                    description: 'Face recognition application in Python. https://colab.research.google.com/drive/1QBLXJ011o6r_0F7gbYSMAaoJUelF3eeg?usp=sharing',
                     href: '/test'
                 }
             ]
@@ -107,7 +104,7 @@ export default {
 .article {
     width: 85%;
     /* border: dotted #9497f8; */
-    color: #dfdfd6;
+    color: var(--text-color);
     overflow: hidden;
 }
 

@@ -91,7 +91,7 @@ export default {
 }
 
 .paragraph {
-    color: #dfdfd6;
+    color: var(--text-color);
     /* border-bottom: solid 1px red; */
     text-wrap: pretty;
     /* white-space: pre-wrap; */
@@ -122,14 +122,14 @@ export default {
 }
 
 .asideInfo h2 {
-    color: #dfdfd6;
+    color: var(--text-color);
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
 .asideInfo p {
-    color: #dfdfd6;
+    color: var(--text-color);
     font-size: 12px;
     margin-left: -19px;
 }

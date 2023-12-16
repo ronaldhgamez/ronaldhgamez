@@ -25,7 +25,7 @@
     top: 63px;
     transform: translate(-50%, 0);
     border-radius: 5px;
-    background-color: rgb(27, 27, 31, 1);
+    background-color: var(--theme-color);
     z-index: 1;
 }
 

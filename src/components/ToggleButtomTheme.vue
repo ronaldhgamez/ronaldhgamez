@@ -1,6 +1,6 @@
 <template>
     <div class="navBarAppereance">
-        <input @change="changeTheme()" type="checkbox" id="switch" />
+        <input @change="switchTheme()" type="checkbox" id="switch" v-model='isChecked' />
         <div class="switch-btn">
             <label for="switch">
                 <div class="icons">
@@ -15,18 +15,45 @@
 </template>
 
 <script lang="ts">
+
+    function changeTheme(currentMode: string, switchMode: string) {
+        const doc: HTMLElement | null = document.getElementById('mode');
+        if (doc) {
+            doc.classList.remove(currentMode)
+            doc.classList.add(switchMode)
+            localStorage.setItem('mode', switchMode)
+        }
+    }
+
+    // Helps to check automatically the toggle button when light mode is save in local storage
+    function setInitialTheme() {
+        const theme = localStorage.getItem('mode') || 'dark';
+        if (theme === 'dark') {
+            changeTheme('light', 'dark')
+            return false
+        } else {
+            changeTheme('dark', 'light')
+            return true
+        }
+    }
+
     export default {
         name: 'toggle-button-theme',
+        data() {
+            return {
+                isChecked: false
+            };
+        },
+        created() {
+            this.isChecked = setInitialTheme()
+        },
         methods: {
-            changeTheme() {
-                /* const element = document.getElementById('app'); */
-                
-                //document.getElementById('app')?.classList.add('light');
-                /* console.log(element?.style.light) */
-
-                //let darkMode: 'true' | 'false' = (localStorage.getItem("darkMode") == 'true') ? 'false' : 'true';
-                //localStorage.setItem("darkMode", darkMode);
-            },
+            switchTheme() {
+                (this.isChecked) ?
+                    changeTheme('dark', 'light') 
+                    :
+                    changeTheme('light', 'dark')
+            }
         }
     }
 </script>
@@ -63,7 +90,6 @@ input[type="checkbox"] {
     align-items: center;
     /* gap: 20px; */
     user-select: none;
-    color: #1b1b1f;
     transform: translate(0px, 12px);
     transition: 0.3s;
 }

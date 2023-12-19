@@ -15,7 +15,7 @@
       <nav class="navBarMenu">
         <router-link class="navOption" to="/"><span> {{ $t("appView.home") }} </span></router-link>
         <router-link class="navOption" to="/about"><span> {{ $t("appView.about") }} </span></router-link>
-        <router-link class="navOption" to="/resume"><span> {{ $t("appView.resume") }} </span></router-link>
+        <router-link class="navOption" to="/about"><span> {{ $t("appView.resume") }} </span></router-link>
         <!-- <router-link class="navOption" to="/test"><span> Test </span></router-link> -->
       </nav>
       <!-- Language Selection -->
@@ -40,7 +40,7 @@
           <nav class="mobileNavOptions">
             <router-link class="navOption" to="/"><span> {{ $t("appView.home") }} </span></router-link>
             <router-link class="navOption" to="/about"><span> {{ $t("appView.about") }}  </span></router-link>
-            <router-link class="navOption" to="/resume"><span> {{ $t("appView.resume") }} </span></router-link>
+            <router-link class="navOption" to="/about"><span> {{ $t("appView.resume") }} </span></router-link>
           </nav>
 
           <div id="appereanceDiv">

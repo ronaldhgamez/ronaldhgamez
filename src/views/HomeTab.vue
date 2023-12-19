@@ -1,6 +1,6 @@
 <template>
     <div class="projectsTab">
-        <div v-for="project in projects">
+        <div v-for="project in getProjects()" :key="project.title">
             <section class="projectElement">
                 <img 
                     alt="Project image"
@@ -30,27 +30,27 @@
 <script lang="ts">
 export default {
     name: 'home-tab',
-    data() {
-        return {
-            projects: [
+    methods : {
+        getProjects() {
+            return [
                 {
                     id: 'p1',
-                    title: this.$t("p1.title"),
-                    description: this.$t("p1.description"),
+                    title: this.$t("homeTab.projects[0].title"),
+                    description: this.$t("homeTab.projects[0].description"),
                     image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ConnectFour.png',
                     href: '/test'
                 },
                 {
                     id: 'p2',
-                    title: this.$t("p2.title"),
-                    description: this.$t("p2.description"),
+                    title: this.$t("homeTab.projects[1].title"),
+                    description: this.$t("homeTab.projects[1].description"),
                     image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ScheduleGenerator.png',
                     href: '/test'
                 },
                 {
                     id: 'p2',
-                    title: this.$t("p3.title"),
-                    description: this.$t("p3.description"),
+                    title: this.$t("homeTab.projects[2].title"),
+                    description: this.$t("homeTab.projects[2].description"),
                     image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/FaceRecognition.png',
                     href: '/test'
                 }

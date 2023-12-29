@@ -1,30 +1,31 @@
 <template>
-    <div class="projectsTab">
-        <div v-for="project in getProjects()" :key="project.title">
-            <section class="projectElement">
-                <img 
-                    alt="Project image"
-                    class="projectImage" 
+    <main class="projectsTab">
+        <article class="projectElement" v-for="project in getProjects()" :key="project.title">
+            <figure>
+                <img
                     v-bind:src="project.image" 
-                />
-                <div class="projectInfoContainer">
-                    <article class="article">
-                        <h1 class="title"> {{ project.title }} </h1>
-                        <p class="description"> {{ project.description }} </p>
-                    </article>
-                    <div class="sourceIcon">
-                        <router-link class="sourceCode" v-bind:to="project.href">
-                            <img 
-                                alt="See details icon"
-                                width="30" height="35"
-                                src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/SourceCodeIcon.png"
-                            />
-                        </router-link>
-                    </div>
-                </div>
+                    :alt="'Image of project: ' + project.title"
+                    class="projectImage"
+                >
+            </figure>
+            <section class="projectInfoContainer">
+                <article class="article">
+                    <h1 class="projectTitle"> {{ project.title }} </h1>
+                    <p class="description"> {{ project.description }} </p>
+                </article>
+                <aside class="sourceIcon">
+                    <router-link v-bind:to="project.href">
+                        <img
+                            src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/SourceCodeIcon.png"
+                            alt="See projects details icon"
+                            width="30"
+                            height="35"
+                        />
+                    </router-link>
+                </aside>
             </section>
-        </div>
-    </div>
+        </article>
+    </main>
 </template>
 
 <script lang="ts">
@@ -37,21 +38,21 @@ export default {
                     id: 'p1',
                     title: this.$t("homeTab.projects[0].title"),
                     description: this.$t("homeTab.projects[0].description"),
-                    image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ConnectFour.png',
+                    image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ConnectFour.webp',
                     href: '/test'
                 },
                 {
                     id: 'p2',
                     title: this.$t("homeTab.projects[1].title"),
                     description: this.$t("homeTab.projects[1].description"),
-                    image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ScheduleGenerator.png',
+                    image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ScheduleGenerator.webp',
                     href: '/test'
                 },
                 {
                     id: 'p2',
                     title: this.$t("homeTab.projects[2].title"),
                     description: this.$t("homeTab.projects[2].description"),
-                    image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/FaceRecognition.png',
+                    image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/FaceRecognition.webp',
                     href: '/test'
                 }
             ]
@@ -80,6 +81,10 @@ export default {
     border-radius: 8px;
     /* Ocults image borders */
     overflow: hidden;
+}
+
+figure {
+    margin: 0;
 }
 
 .projectElement:hover {
@@ -113,14 +118,13 @@ export default {
 }
  */
 
-.title {
+.projectTitle {
     /* border: dotted green; */
     margin: 0;
-    font-size: 17px;
     height: auto;
     width: auto;
-    padding: 10px 0 2px 10px;
-    border-bottom: solid 1px rgb(255, 255, 255, 0.1);
+    padding: 8px 0px 5px 10px;
+    border-bottom: solid 1px rgb(255 255 255 / 0.1);
     /* For titles */
     text-wrap: balance;
 }
@@ -131,7 +135,6 @@ export default {
     padding: 0px 10px;
     overflow: hidden;
     text-wrap: pretty;
-    height: 67%;
     font-size: 13px;
 }
 

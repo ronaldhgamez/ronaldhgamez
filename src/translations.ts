@@ -26,7 +26,7 @@ const messages = {
       ]
     },
     aboutMeView: {
-      title: 'Simplicity and intuition make perfection',
+      title: 'Full Stack web Engineer focus on Frontend',
       p1: `Passionate computer engineer specializing in full-stack application development, with a keen focus on web technologies. My journey in the IT industry began in 2021, and since then, I've thrived in creating robust solutions using Angular, Vue.js, and Node.js for server-side applications.`,
       p2: `In my pursuit of excellence, simplicity and intuition guide my development approach, aiming for perfection in every project. Let's connect and build something extraordinary together!`,
       skills: [
@@ -63,7 +63,7 @@ const messages = {
       ]
     },
     aboutMeView: {
-      title: 'Simplicidad e intuición hacen la perfección',
+      title: 'Ingeniero Full Stack enfocado en desarrollo web Frontend',
       p1: 'Ingeniero informático apasionado especializado en desarrollo de aplicaciones full-stack, con un enfoque especial en tecnologías web. Mi trayectoria en la industria de tecnologías de la información comenzó en 2021, y desde entonces, he prosperado en la creación de soluciones robustas utilizando Angular, Vue.js y Node.js para aplicaciones del lado del servidor.',
       p2: 'En mi búsqueda de la excelencia, la simplicidad y la intuición guían mi enfoque de desarrollo, apuntando a la perfección en cada proyecto. ¡Conectemos y construyamos algo extraordinario juntos!',
       skills: [

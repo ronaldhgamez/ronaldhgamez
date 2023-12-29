@@ -24,3 +24,23 @@ body {
   background-color: var(--theme-color);
   color: var(--text-color);
 }
+
+
+/* scroll bar */
+/* For WebKit-based browsers */
+body {
+  scrollbar-color: var(--theme-color) #555555; /* Dark scrollbar color */
+}
+
+/* For older versions of WebKit-based browsers (like Safari) */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #555555; /* Dark thumb color */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--theme-color); /* Dark track color */
+}

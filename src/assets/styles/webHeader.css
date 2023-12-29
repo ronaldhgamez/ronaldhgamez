@@ -1,13 +1,21 @@
 .container {
     display: flex;
-    border-bottom-style: solid;
-    border-bottom-width: 0.5px;
-    color: rgb(0, 0, 0, 0.4);
     width: 100%;
     /* max-width: 1500px; */
     box-sizing: border-box;
     /* Add a padding in the web header */
     padding-right: 25px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    background-color: --theme-color;
+}
+
+main {
+    margin-top: 63px;
 }
 
 .title {

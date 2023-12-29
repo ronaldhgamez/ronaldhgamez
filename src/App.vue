@@ -1,19 +1,22 @@
 <template>
 
-  <div class="container">
+  <header class="container fixed">
+
+    <!-- https://github.com/ronaldhgamez/files-and-images/blob/main/logo/logo.dev.white-transparent.png?raw=true -->
+
     <!-- Title and logo -->
-    <router-link class="title" to="/">
+    <router-link class="title" to="/about">
       <img 
-        width="40" height="40"
-        src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/SourceCodeIcon.png" 
+        width="50" height="50"
+        src="https://github.com/ronaldhgamez/files-and-images/blob/main/logo/logo.dev.black.transparent.png?raw=true"
       />
-      <a><span>{</span>Ronaldhg<span>}</span></a>
+      <a><span> | </span> RONALDHGAMEZ <span>  | </span></a>
     </router-link>
 
     <!-- [Header displayed for web users] -->
     <div class="webHeaderContent">
       <nav class="navBarMenu">
-        <router-link class="navOption" to="/"><span> {{ $t("appView.home") }} </span></router-link>
+        <router-link class="navOption" to="/home"><span> {{ $t("appView.home") }} </span></router-link>
         <router-link class="navOption" to="/about"><span> {{ $t("appView.about") }} </span></router-link>
         <router-link class="navOption" to="/about"><span> {{ $t("appView.resume") }} </span></router-link>
         <!-- <router-link class="navOption" to="/test"><span> Test </span></router-link> -->
@@ -82,7 +85,7 @@
         </div> <!-- End Floating menu -->
       </div> <!-- End Hamburger menu -->
     </div>
-  </div>
+  </header>
 
   <router-view></router-view>
 </template>
@@ -112,9 +115,10 @@ export default {
 
 <style>
 
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
+.logo {
+  width: 50;
+  height: 50px;
+  padding-left: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -123,7 +127,4 @@ export default {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-} */
 </style>

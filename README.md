@@ -6,10 +6,10 @@ Computing engineer passionate about building full-stack applications with strong
 Discover more about me and my work by visiting my personal portfolio at:
 
 <div align="center">
-  <img width="34" height="34" src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/SourceCodeIcon.png"/>
+  <img width="100" height="100" src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/logo/logo.dev.black.transparent.png"/>
   <br>
   <a href="https://ronaldhgamez.github.io/ronaldhgamez/" target="_blank">
-    Ronald's Website
+    Ronald Herrera Gámez | Portfolio
   </a>
 </div>
 

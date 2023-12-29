@@ -6,7 +6,8 @@ import ResumeTab from './views/ResumeTab.vue';
 import ProjectDetails from './views/ProjectDetails.vue';
 
 const routes = [
-    { path: '/', component: HomeTab },
+    { path: '/', component: AboutMe },
+    { path: '/home', component: HomeTab },
     { path: '/about', component: AboutMe },
     { path: '/resume', component: ResumeTab },
     { path: '/test', component: ProjectDetails },

@@ -6,7 +6,7 @@ const messages = {
   en: {
     appView: {
       home: 'Home',
-      about: 'About Me',
+      projects: 'Projects',
       resume: 'Resume'
     },
     homeTab: {
@@ -26,9 +26,9 @@ const messages = {
       ]
     },
     aboutMeView: {
-      title: 'Full Stack web Engineer focus on Frontend',
-      p1: `Passionate computer engineer specializing in full-stack application development, with a keen focus on web technologies. My journey in the IT industry began in 2021, and since then, I've thrived in creating robust solutions using Angular, Vue.js, and Node.js for server-side applications.`,
-      p2: `In my pursuit of excellence, simplicity and intuition guide my development approach, aiming for perfection in every project. Let's connect and build something extraordinary together!`,
+      title: 'Software Engineer - Full Stack Web Developer',
+      p1: "+2 years of experience in IT industry. Specially focused in Frontend development. Actively learning and implementing new technologies to create my own solutions.",
+      p2: "Graduated from Instituto Tecnológico de Costa Rica in 2022, initiating work experience at Intel in 2021 as a student worker, driven by a passion for web development.",
       skills: [
         { title: '🧠 Analytical Thinking', description: 'Equipped with robust analytical skills, I tackle complex problems with precision and efficiency.' },
         { title: '📚 Self-learning', description: 'Demonstrating a commitment to continuous improvement, I excel in independent learning, adapting seamlessly to new challenges.' },
@@ -43,7 +43,7 @@ const messages = {
   sp: {
     appView: {
       home: 'Principal',
-      about: 'Sobre mí',
+      projects: 'Proyectos',
       resume: 'Curriculum'
     },
     homeTab: {
@@ -63,9 +63,9 @@ const messages = {
       ]
     },
     aboutMeView: {
-      title: 'Ingeniero Full Stack enfocado en desarrollo web Frontend',
-      p1: 'Ingeniero informático apasionado especializado en desarrollo de aplicaciones full-stack, con un enfoque especial en tecnologías web. Mi trayectoria en la industria de tecnologías de la información comenzó en 2021, y desde entonces, he prosperado en la creación de soluciones robustas utilizando Angular, Vue.js y Node.js para aplicaciones del lado del servidor.',
-      p2: 'En mi búsqueda de la excelencia, la simplicidad y la intuición guían mi enfoque de desarrollo, apuntando a la perfección en cada proyecto. ¡Conectemos y construyamos algo extraordinario juntos!',
+      title: 'Ingeniero de Software - Desarrollador Web Full Stack',
+      p1: '+2 años de experiencia en la industria IT. Especializado especialmente en desarrollo Frontend. Aprendiendo activamente e implementando nuevas tecnologías para crear mis propias soluciones.',
+      p2: 'Graduado del Instituto Tecnológico de Costa Rica en 2022, inicié mi experiencia laboral en Intel en 2021 como estudiante trabajador, impulsado por una pasión por el desarrollo web.',
       skills: [
         { title: '🧠 Pensamiento Analítico', description: 'Equipado con habilidades analíticas sólidas, abordo problemas complejos con precisión y eficiencia.' },
         { title: '📚 Autoaprendizaje', description: 'Demostrando un compromiso con la mejora continua, sobresalgo en el aprendizaje independiente, adaptándome sin problemas a nuevos desafíos.' },
@@ -80,7 +80,7 @@ const messages = {
   ja: {
     appView: {
       home: 'ホーム',
-      about: '私について',
+      projects: '项目',
       resume: '履歴書'
     },
     homeTab: {
@@ -100,9 +100,9 @@ const messages = {
       ]
     },
     aboutMeView: {
-      title: 'シンプリシティが完璧を生む',
-      p1: 'ウェブ技術に特化した情熱的なコンピュータエンジニアで、フルスタックアプリケーション開発を専門としています。IT業界での私の旅は2021年に始まり、それ以来、Angular、Vue.js、およびNode.jsを使用してサーバーサイドアプリケーションのための堅牢なソリューションを作り上げてきました。',
-      p2: '卓越を求める中で、シンプリシティと直感が私の開発アプローチを導き、プロジェクトごとに完璧を目指しています。一緒に何か特別なものを構築しましょう！',
+      title: '软件工程师 - 全栈Web开发者',
+      p1: '在IT行业有2年以上的经验。专注于前端开发。积极学习和应用新技术，创造自己的解决方案。',
+      p2: '于2022年毕业于哥斯达黎加理工学院，于2021年以学生工作者身份开始在英特尔的工作经历，出于对Web开发的热情。',
       skills: [
         { title: '🧠 分析的思考', description: '堅牢な分析力を備え、複雑な問題に精度と効率で対処します。' },
         { title: '📚 自己学習', description: '継続的な向上心を示し、独立した学習で優れた成果を上げ、新しい課題にシームレスに適応します。' },

@@ -14,10 +14,6 @@
     background-color: --theme-color;
 }
 
-main {
-    margin-top: 63px;
-}
-
 .title {
     display: flex;
     align-items: center;

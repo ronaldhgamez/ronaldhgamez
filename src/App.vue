@@ -1,24 +1,18 @@
 <template>
 
   <header class="container fixed">
-
-    <!-- https://github.com/ronaldhgamez/files-and-images/blob/main/logo/logo.dev.white-transparent.png?raw=true -->
-
     <!-- Title and logo -->
-    <router-link class="title" to="/about">
-      <img 
-        width="50" height="50"
-        src="https://github.com/ronaldhgamez/files-and-images/blob/main/logo/logo.dev.black.transparent.png?raw=true"
-      />
-      <a><span> | </span> RONALDHGAMEZ <span>  | </span></a>
+    <router-link class="title" to="/home">
+      <img width="50" height="50" alt="Ronald's Logo" :src="logoURL" >
+      <a><span>|</span><span>Ronald</span>hgamez<span>|</span></a>
     </router-link>
 
     <!-- [Header displayed for web users] -->
     <div class="webHeaderContent">
       <nav class="navBarMenu">
         <router-link class="navOption" to="/home"><span> {{ $t("appView.home") }} </span></router-link>
-        <router-link class="navOption" to="/about"><span> {{ $t("appView.about") }} </span></router-link>
-        <router-link class="navOption" to="/about"><span> {{ $t("appView.resume") }} </span></router-link>
+        <router-link class="navOption" to="/projects"><span> {{ $t("appView.projects") }} </span></router-link>
+        <a class="navOption" target="_blank" href="https://drive.google.com/file/d/1VkNW1QCu4TaE1naxPyllzjXGMYrCQoy-/view?usp=sharing"><span> {{ $t("appView.resume") }} </span></a>
         <!-- <router-link class="navOption" to="/test"><span> Test </span></router-link> -->
       </nav>
       <!-- Language Selection -->
@@ -41,13 +35,15 @@
         <!-- Floating menu -->
         <div class="mobileNavMenu">
           <nav class="mobileNavOptions">
-            <router-link class="navOption" to="/"><span> {{ $t("appView.home") }} </span></router-link>
-            <router-link class="navOption" to="/about"><span> {{ $t("appView.about") }}  </span></router-link>
-            <router-link class="navOption" to="/about"><span> {{ $t("appView.resume") }} </span></router-link>
+            <router-link class="navOption" to="/home"><span> {{ $t("appView.home") }} </span></router-link>
+            <router-link class="navOption" to="/projects"><span> {{ $t("appView.projects") }} </span></router-link>
+            <a class="navOption" target="_blank" href="https://drive.google.com/file/d/1VkNW1QCu4TaE1naxPyllzjXGMYrCQoy-/view?usp=sharing"><span> {{ $t("appView.resume") }} </span></a>
           </nav>
 
           <div id="appereanceDiv">
-            <span class="navOption">Theme</span>
+            <span class="navOption">Theme
+              <toggle-buttom-theme></toggle-buttom-theme>
+            </span>
           </div>
 
           <!-- Contact Icons -->
@@ -100,6 +96,8 @@ export default {
   components: { ToggleButtomTheme, LanguageSelectionOption },
   data() {
     return {
+      //https://github.com/ronaldhgamez/files-and-images/blob/main/logo/logo.dev.white-transparent.png?raw=true
+      logoURL: 'https://github.com/ronaldhgamez/files-and-images/blob/main/logo/logo.dev.black.transparent.png?raw=true',
       contact: [
         {
           label: '',

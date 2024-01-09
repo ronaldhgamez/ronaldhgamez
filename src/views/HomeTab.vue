@@ -14,14 +14,14 @@
                     <p class="description"> {{ project.description }} </p>
                 </article>
                 <aside class="sourceIcon">
-                    <router-link v-bind:to="project.href">
+                    <a :href="project.href" target="_blank">
                         <img
                             src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/SourceCodeIcon.png"
                             alt="See projects details icon"
                             width="30"
                             height="35"
                         />
-                    </router-link>
+                    </a>
                 </aside>
             </section>
         </article>
@@ -39,21 +39,21 @@ export default {
                     title: this.$t("homeTab.projects[0].title"),
                     description: this.$t("homeTab.projects[0].description"),
                     image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ConnectFour.webp',
-                    href: '/test'
+                    href: 'https://github.com/ronaldhgamez/conecta-cuatro'
                 },
                 {
                     id: 'p2',
                     title: this.$t("homeTab.projects[1].title"),
                     description: this.$t("homeTab.projects[1].description"),
                     image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ScheduleGenerator.webp',
-                    href: '/test'
+                    href: 'https://youtu.be/cOYxs_Fqueo'
                 },
                 {
                     id: 'p2',
                     title: this.$t("homeTab.projects[2].title"),
                     description: this.$t("homeTab.projects[2].description"),
                     image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/FaceRecognition.webp',
-                    href: '/test'
+                    href: 'https://colab.research.google.com/drive/1QBLXJ011o6r_0F7gbYSMAaoJUelF3eeg?usp=sharing'
                 }
             ]
         }
@@ -62,6 +62,9 @@ export default {
 </script>
 
 <style scoped>
+main {
+    margin-top: 63px;
+}
 .projectsTab {
     /* border: solid 1px #9497f8; */
     box-sizing: border-box;

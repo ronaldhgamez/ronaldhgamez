@@ -7,8 +7,9 @@ import ProjectDetails from './views/ProjectDetails.vue';
 
 const routes = [
     { path: '/', component: AboutMe },
-    { path: '/home', component: HomeTab },
-    { path: '/about', component: AboutMe },
+    { path: '/home', component: AboutMe },
+    { path: '/projects', component: HomeTab },
+    
     { path: '/resume', component: ResumeTab },
     { path: '/test', component: ProjectDetails },
   ]

@@ -36,14 +36,14 @@ export default {
 
 /* Avatar Profile */
 .image-container figure > img {
-    filter: grayscale(10%);
+    filter: grayscale(20%);
     border-radius: 50%;
-    box-shadow: 0px 0px 80px -14px #9497f8;
+    box-shadow: 0px 0px 80px -14px #696480;
 }
 
 .image-container img:hover {
     outline: none;
-    box-shadow: 0px 0px 150px -14px #9497f8;
+    box-shadow: 0px 0px 150px -14px #696480;
     transition: 0.3s;
 }
 

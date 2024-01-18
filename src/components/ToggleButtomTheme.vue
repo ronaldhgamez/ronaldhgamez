@@ -78,7 +78,7 @@ input[type="checkbox"] {
     width: 60px;
     height: 24px;
     background: #2b2f36;
-    border: 1px solid #ffffff17;
+    border: 1px solid #344363;
     border-radius: 40px;
     transition: 0.8s;
 }
@@ -126,8 +126,8 @@ label {
 
 /* Switch to light mode */
 input[type="checkbox"]:checked~.switch-btn {
-    background: #c6c6c6;
-    border: 1px solid #1b1b1f;
+    background: rgb(207, 217, 223);
+    border: 1px solid rgb(164, 184, 197);
 }
 
 /* Switch to light mode */
@@ -135,7 +135,7 @@ input[type="checkbox"]:checked~.switch-btn label {
     /* distance to the left */
     transform: translateX(35px);
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
-    background: #eff0f3;
+    background: rgb(207, 217, 223);
 }
 
 input[type="checkbox"]:checked~.switch-btn label .icons {

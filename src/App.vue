@@ -3,15 +3,15 @@
   <header class="container fixed">
     <!-- Title and logo -->
     <router-link class="title" to="/home">
-      <img width="50" height="50" alt="Ronald's Logo" :src="logoURL" >
-      <a><span>|</span><span>Ronald</span>hgamez<span>|</span></a>
+      <img id="logo" width="60" height="60" alt="Ronald's Logo" :src="logoURL" >
+      <a><span>| Ronald</span>hgamez<span> |</span></a>
     </router-link>
 
     <!-- [Header displayed for web users] -->
     <div class="webHeaderContent">
       <nav class="navBarMenu">
-        <router-link class="navOption" to="/home"><span> {{ $t("appView.home") }} </span></router-link>
-        <router-link class="navOption" to="/projects"><span> {{ $t("appView.projects") }} </span></router-link>
+        <a class="navOption" href="#home"><span> {{ $t("appView.home") }} </span></a>
+        <a class="navOption" href="#projects"><span> {{ $t("appView.projects") }} </span></a>
         <a class="navOption" target="_blank" href="https://drive.google.com/file/d/1VkNW1QCu4TaE1naxPyllzjXGMYrCQoy-/view?usp=sharing"><span> {{ $t("appView.resume") }} </span></a>
         <!-- <router-link class="navOption" to="/test"><span> Test </span></router-link> -->
       </nav>
@@ -82,22 +82,25 @@
       </div> <!-- End Hamburger menu -->
     </div>
   </header>
-
-  <router-view></router-view>
+  
+  <!-- <router-view></router-view> -->
+  <about-me id="home"></about-me>
+  <home-tab id="projects"></home-tab>
 </template>
 
 
 <script lang="ts">
 import LanguageSelectionOption from './components/LanguageSelectionOption.vue';
 import ToggleButtomTheme from './components/ToggleButtomTheme.vue';
+import AboutMe from './views/AboutMe.vue';
+import HomeTab from './views/HomeTab.vue';
 
 export default {
   name: 'App',
-  components: { ToggleButtomTheme, LanguageSelectionOption },
+  components: { ToggleButtomTheme, LanguageSelectionOption, HomeTab, AboutMe },
   data() {
     return {
-      //https://github.com/ronaldhgamez/files-and-images/blob/main/logo/logo.dev.white-transparent.png?raw=true
-      logoURL: 'https://github.com/ronaldhgamez/files-and-images/blob/main/logo/logo.dev.black.transparent.png?raw=true',
+      logoURL: 'https://github.com/ronaldhgamez/files-and-images/blob/main/logo/logoporfolio.png?raw=true',
       contact: [
         {
           label: '',
@@ -109,20 +112,3 @@ export default {
   }
 }
 </script>
-
-
-<style>
-
-.logo {
-  width: 50;
-  height: 50px;
-  padding-left: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-</style>

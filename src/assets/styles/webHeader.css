@@ -1,10 +1,11 @@
 .container {
     display: flex;
     width: 100%;
-    /* max-width: 1500px; */
     box-sizing: border-box;
     /* Add a padding in the web header */
     padding-right: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for the header */
+    backdrop-filter: blur(10px); /* Add blur effect */
 }
 
 .fixed {
@@ -20,7 +21,7 @@
     padding-left: 30px;
     gap: 15px;
     height: 63px;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: bold;
     width: 450px;
     cursor: pointer;
@@ -29,7 +30,7 @@
 }
 
 .title span {
-    color:#9497f8;
+    color: #1a94fb;
 }
 
 .webHeaderContent {
@@ -54,13 +55,13 @@
 }
 
 .navOption:hover {
-    color: #9497f8;
+    color: #3fa7fc;
     transition: 0.5s;
 }
 
 .navOption:active {
     transition: 0.5s;
-    box-shadow: 0px 0px 2px 1px ;
+    box-shadow: 0px 0px 2px 1px;
 }
 
 .navBarMenu {
@@ -75,24 +76,19 @@
     width: 100px;
 }
 
-
-/* .link {
-    display: flex;
-    align-items: center;
-    padding: 0, 12px
-} */
-
 /* Media query for mobile devices (up to 767 pixels wide) */
 @media only screen and (max-width: 767px) {
     .webHeaderContent {
         display: none;
     }
+
     /* Sends hamburger icon at the end */
     .container {
         justify-content: space-between;
         /* Remove padding in mobile header */
         padding-right: 0;
     }
+
     .title {
         padding-left: 20px;
         gap: 10px;

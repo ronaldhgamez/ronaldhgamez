@@ -35,23 +35,30 @@ export default {
         getProjects() {
             return [
                 {
-                    id: 'p1',
+                    id: 'p0',
                     title: this.$t("homeTab.projects[0].title"),
                     description: this.$t("homeTab.projects[0].description"),
+                    image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/cultour.webp',
+                    href: 'https://www.figma.com/proto/5E1lDP2eCHKICHELvsuBNj/Site?type=design&node-id=76-33&t=4BNJ1OojG9uh2c7Q-1&scaling=scale-down&page-id=0%3A1'
+                },
+                {
+                    id: 'p1',
+                    title: this.$t("homeTab.projects[1].title"),
+                    description: this.$t("homeTab.projects[1].description"),
                     image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ConnectFour.webp',
                     href: 'https://github.com/ronaldhgamez/conecta-cuatro'
                 },
                 {
                     id: 'p2',
-                    title: this.$t("homeTab.projects[1].title"),
-                    description: this.$t("homeTab.projects[1].description"),
+                    title: this.$t("homeTab.projects[2].title"),
+                    description: this.$t("homeTab.projects[2].description"),
                     image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ScheduleGenerator.webp',
                     href: 'https://youtu.be/cOYxs_Fqueo'
                 },
                 {
-                    id: 'p2',
-                    title: this.$t("homeTab.projects[2].title"),
-                    description: this.$t("homeTab.projects[2].description"),
+                    id: 'p3',
+                    title: this.$t("homeTab.projects[3].title"),
+                    description: this.$t("homeTab.projects[3].description"),
                     image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/FaceRecognition.webp',
                     href: 'https://colab.research.google.com/drive/1QBLXJ011o6r_0F7gbYSMAaoJUelF3eeg?usp=sharing'
                 }

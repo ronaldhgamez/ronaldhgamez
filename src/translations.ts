@@ -12,6 +12,10 @@ const messages = {
     homeTab: {
       projects: [
         {
+          title: 'Cultour Costa Rica - Under development',
+          description: 'Freelance project for Cultour CR, focused on modernizing its website and highlighting its services, ranging from traditional farming practices to engaging in typical activities in Costa Rica, for potential clientsfreelance project for Cultour CR, focused on modernizing its website and highlighting its services, ranging from traditional farming practices to engaging in typical activities in Costa Rica.'
+        },
+        {
           title: 'Connect Four 🔴 Web Board Game 🟡',
           description: 'Game logic for the board game "Connect 4". Try to play against this AI and beat it!'
         },
@@ -49,6 +53,10 @@ const messages = {
     homeTab: {
       projects: [
         {
+          title: 'Cultour Costa Rica - En desarrollo',
+          description: 'Proyecto freelance para la empresa Cultour CR hecho para modernizar su sitio web y destacar sus servicios, desde prácticas agrícolas tradicionales hasta participar en actividades típicas de Costa Rica.'
+        },
+        {
           title: 'Cuatro en línea 🔴 Juego de mesa en la web 🟡',
           description: 'Lógica de juego para el juego de mesa "Cuatro en línea". ¡Intenta jugar contra esta inteligencia artificial y supérala!',
         },
@@ -63,7 +71,7 @@ const messages = {
       ]
     },
     aboutMeView: {
-      title: 'Ingeniero de Software - Desarrollador Web Full Stack',
+      title: 'Ing. en Computación Desarrollador Web Full Stack',
       p1: '+2 años de experiencia en la industria IT. Especializado especialmente en desarrollo Frontend. Aprendiendo activamente e implementando nuevas tecnologías para crear mis propias soluciones.',
       p2: 'Graduado del Instituto Tecnológico de Costa Rica en 2022, inicié mi experiencia laboral en Intel en 2021 como estudiante trabajador, impulsado por una pasión por el desarrollo web.',
       skills: [
@@ -85,6 +93,11 @@ const messages = {
     },
     homeTab: {
       projects: [
+        
+        {
+          title: 'Cultour Costa Rica - 正在开发中',
+          description: '这是为Cultour CR公司进行的自由职业项目，旨在现代化其网站并展示其服务，从传统的农业实践到参与典型的哥斯达黎加活动，面向潜在客户。',
+        },
         {
           title: '四子棋 🔴 网络棋盘游戏 🟡',
           description: '针对“四子棋”棋盘游戏的游戏逻辑。尝试与这个人工智能对战并战胜它！',

@@ -66,7 +66,7 @@ export default {
 .container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
     margin-top: 63px;
     height: 85vh;
@@ -75,9 +75,12 @@ export default {
 
 .roleTitle {
     max-width: 500px;
-    font-size: 2em;
+    font-size: 2.5em;
     text-wrap: balance;
     padding: 0 5px;
+    font-family: "Elsie Swash Caps", serif;
+    font-weight: 900;
+    font-style: normal;
     /* outline: dotted 3px greenyellow; */
 }
 
@@ -113,6 +116,10 @@ export default {
     margin: 0 20px;
     font-size: 20px;
     color: var(--text-color);
+    font-family: "Elsie Swash Caps", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fea404;
 }
 
 .locationIcon {

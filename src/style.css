@@ -35,6 +35,17 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.roleTitle {
+  max-width: 500px;
+  font-size: 2.5em;
+  text-wrap: balance;
+  padding: 0 5px;
+  font-family: "Elsie Swash Caps", serif;
+  font-weight: 900;
+  font-style: normal;
+  /* outline: dotted 3px greenyellow; */
+}
+
 /* scroll bar */
 /* For WebKit-based browsers */
 body {

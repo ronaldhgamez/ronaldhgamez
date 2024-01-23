@@ -45,8 +45,8 @@ export default {
                     id: 'p1',
                     title: this.$t("homeTab.projects[1].title"),
                     description: this.$t("homeTab.projects[1].description"),
-                    image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ConnectFour.webp',
-                    href: 'https://github.com/ronaldhgamez/conecta-cuatro'
+                    image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ConnectFour2.webp',
+                    href: 'https://ronaldhgamez.github.io/conecta-cuatro/'
                 },
                 {
                     id: 'p2',
@@ -69,16 +69,18 @@ export default {
 </script>
 
 <style scoped>
+
 main {
     margin-top: 63px;
 }
+
 .projectsTab {
     /* border: solid 1px #9497f8; */
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
     padding: 50px 20px;
 }
 
@@ -86,8 +88,8 @@ main {
     /* border: solid 1px #dfdfd6; */
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    height: 300px;
+    max-width: 450px;
+    height: 320px;
     border-radius: 8px;
     /* Ocults image borders */
     overflow: hidden;
@@ -107,13 +109,14 @@ figure {
     height: 210px;
     /* Ensures the image covers the entire space, preserving aspect ratio */
     object-fit: cover;
+    object-position: top;
 }
 
 .projectInfoContainer {
     /* border: dotted 1px red; */
     display: flex;
     justify-content: space-between;
-    height: 90px;
+    height: 100px;
 }
 
 .article {

@@ -73,17 +73,6 @@ export default {
     /* outline: solid 1px white; */
 }
 
-.roleTitle {
-    max-width: 500px;
-    font-size: 2.5em;
-    text-wrap: balance;
-    padding: 0 5px;
-    font-family: "Elsie Swash Caps", serif;
-    font-weight: 900;
-    font-style: normal;
-    /* outline: dotted 3px greenyellow; */
-}
-
 .main-content {
     max-width: 550px;
     /* outline: dotted 3px orange; */

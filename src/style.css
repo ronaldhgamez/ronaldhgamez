@@ -1,12 +1,13 @@
 :root {
   --theme-color: #1b1b1f;
-  --text-color: #dfdfd6;
+  --text-color: rgb(203, 203, 196);
   --filter-svg: invert(0);
 }
 
 :root .dark {
   --theme-color: #1b1b1f;
   --text-color: #cdd8ec;
+  --hover-color: #262b30;
   --filter-svg: invert(0);
   background: rgb(27, 27, 31);
   background: linear-gradient(90deg, rgba(27, 27, 31, 1) 8%, #222224 62%, rgba(27, 27, 31, 1) 79%);
@@ -15,6 +16,7 @@
 :root .light {
   --theme-color: #dde7e6;
   --text-color: #3b3b48;
+  --hover-color: rgb(219, 202, 245);
   --filter-svg: invert(1);
   background: rgb(255,255,255);
   background: linear-gradient(90deg, rgb(255,255,255) 8%, #d6c5fc 62%, rgb(207, 217, 223) 79%);

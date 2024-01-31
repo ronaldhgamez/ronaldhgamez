@@ -12,7 +12,7 @@
       <nav class="navBarMenu">
         <a class="navOption" href="#home"><span> {{ $t("appView.home") }} </span></a>
         <a class="navOption" href="#projects"><span> {{ $t("appView.projects") }} </span></a>
-        <a class="navOption" target="_blank" href="https://drive.google.com/file/d/1VkNW1QCu4TaE1naxPyllzjXGMYrCQoy-/view?usp=sharing"><span> {{ $t("appView.resume") }} </span></a>
+        <a class="navOption" target="_blank" :href="cv"><span> {{ $t("appView.resume") }} </span></a>
         <!-- <router-link class="navOption" to="/test"><span> Test </span></router-link> -->
       </nav>
       <!-- Language Selection -->
@@ -37,7 +37,7 @@
           <nav class="mobileNavOptions">
             <router-link class="navOption" to="/home"><span> {{ $t("appView.home") }} </span></router-link>
             <router-link class="navOption" to="/projects"><span> {{ $t("appView.projects") }} </span></router-link>
-            <a class="navOption" target="_blank" href="https://drive.google.com/file/d/1VkNW1QCu4TaE1naxPyllzjXGMYrCQoy-/view?usp=sharing"><span> {{ $t("appView.resume") }} </span></a>
+            <a class="navOption" target="_blank" :href="cv"><span> {{ $t("appView.resume") }} </span></a>
           </nav>
 
           <div id="appereanceDiv">
@@ -86,6 +86,9 @@
   <!-- <router-view></router-view> -->
   <about-me id="home"></about-me>
   <home-tab id="projects"></home-tab>
+  <SkillsView></SkillsView>
+  <FooterView></FooterView>
+  
 </template>
 
 
@@ -94,20 +97,16 @@ import LanguageSelectionOption from './components/LanguageSelectionOption.vue';
 import ToggleButtomTheme from './components/ToggleButtomTheme.vue';
 import AboutMe from './views/AboutMe.vue';
 import HomeTab from './views/HomeTab.vue';
+import FooterView from './views/FooterView.vue';
+import SkillsView from './views/SkillsView.vue';
 
 export default {
   name: 'App',
-  components: { ToggleButtomTheme, LanguageSelectionOption, HomeTab, AboutMe },
+  components: { ToggleButtomTheme, LanguageSelectionOption, HomeTab, AboutMe, FooterView, SkillsView},
   data() {
     return {
       logoURL: 'https://github.com/ronaldhgamez/files-and-images/blob/main/logo/logoporfolio.png?raw=true',
-      contact: [
-        {
-          label: '',
-          url: '',
-          svg: ''
-        }
-      ]
+      cv: 'https://drive.google.com/file/d/1pbjDCSSPL7v49Ip5UmD1YQBe2NjhK_ex/view?usp=sharing',
     }
   }
 }

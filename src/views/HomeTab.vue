@@ -45,7 +45,7 @@ export default {
                     id: 'p1',
                     title: this.$t("homeTab.projects[1].title"),
                     description: this.$t("homeTab.projects[1].description"),
-                    image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ConnectFour2.webp',
+                    image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/ConnectFour.webp',
                     href: 'https://ronaldhgamez.github.io/conecta-cuatro/'
                 },
                 {

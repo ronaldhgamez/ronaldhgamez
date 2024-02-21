@@ -77,8 +77,8 @@ input[type="checkbox"] {
 .switch-btn {
     width: 60px;
     height: 24px;
-    background: #2b2f36;
-    border: 1px solid #344363;
+    background: #212429;
+    border: 1px solid #4c4f54;
     border-radius: 40px;
     transition: 0.8s;
 }
@@ -126,7 +126,7 @@ label {
 
 /* Switch to light mode */
 input[type="checkbox"]:checked~.switch-btn {
-    background: rgb(207, 217, 223);
+    background: #efe1f3;
     border: 1px solid rgb(164, 184, 197);
 }
 

@@ -6,24 +6,31 @@
 
 :root .dark {
   --theme-color: #1b1b1f;
-  --text-color: #cdd8ec;
+  --text-color: #fff9e7;
   --hover-color: #262b30;
   --filter-svg: invert(0);
   background: rgb(27, 27, 31);
-  background: linear-gradient(90deg, rgba(27, 27, 31, 1) 8%, #222224 62%, rgba(27, 27, 31, 1) 79%);
+  background: linear-gradient(to right, #231f28 0%, #111 90%);
 }
 
 :root .light {
   --theme-color: #dde7e6;
-  --text-color: #3b3b48;
-  --hover-color: rgb(219, 202, 245);
+  --text-color: #494137;
+  --hover-color: rgb(245, 235, 202);
   --filter-svg: invert(1);
   background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgb(255,255,255) 8%, #d6c5fc 62%, rgb(207, 217, 223) 79%);
+  background: linear-gradient(to right, #ffffff 0%, #f3ddfa 90%);
+  & .beautyTitleColor {
+    color: transparent;
+    background: linear-gradient(to right, #a837ff, #27e2ffeb);
+    text-shadow: 0 0 5px rgba(1, 1, 1, 0.1);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 }
 
 body {
-  /* margin: 0; */
+  margin: 0;
   font-size: 16px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: var(--theme-color);
@@ -31,10 +38,17 @@ body {
 }
 
 .beautyTitleColor {
-  background: -webkit-linear-gradient(var(--text-color), rgb(83, 186, 255));
-  background-clip: border-box;
+  color: transparent;
+  background: linear-gradient(to right, #c081f0, #6ec2e0eb);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 48px;
+  /* Font */
+  font-family: "Oleo", system-ui !important;
+  font-weight: 900 !important;
+  font-style: normal;
+  margin: 10px -10;
 }
 
 .roleTitle {

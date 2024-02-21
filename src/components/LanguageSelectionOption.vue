@@ -151,7 +151,7 @@
 }
 
 .language:hover .langOption {
-    color: #9497f8;
+    color: #00a2ff;
 }
 
 .langOption {

@@ -32,7 +32,7 @@ const messages = {
     aboutMeView: {
       title: 'Software Engineer - Full Stack Web Developer',
       p1: "+2 years of experience in IT industry. Specially focused in Frontend development. Actively learning and implementing new technologies to create my own solutions.",
-      p2: "Graduated from Instituto Tecnológico de Costa Rica in 2022, initiating work experience at Intel in 2021 as a student worker, driven by a passion for web development.",
+      p2: "Graduated from Instituto Tecnológico de Costa Rica in 2022, initiating work experience at Intel in 2021 as a student worker, driven by a passion for web development. Currently working in Movable Ink.",
       skills: [
         { title: '🧠 Analytical Thinking', description: 'Equipped with robust analytical skills, I tackle complex problems with precision and efficiency.' },
         { title: '📚 Self-learning', description: 'Demonstrating a commitment to continuous improvement, I excel in independent learning, adapting seamlessly to new challenges.' },
@@ -73,7 +73,7 @@ const messages = {
     aboutMeView: {
       title: 'Ing. en Computación Desarrollador Web Full Stack',
       p1: '+2 años de experiencia en la industria IT. Especializado especialmente en desarrollo Frontend. Aprendiendo activamente e implementando nuevas tecnologías para crear mis propias soluciones.',
-      p2: 'Graduado del Instituto Tecnológico de Costa Rica en 2022, inicié mi experiencia laboral en Intel en 2021 como estudiante trabajador, impulsado por una pasión por el desarrollo web.',
+      p2: 'Graduado del Instituto Tecnológico de Costa Rica en 2022, inicié mi experiencia laboral en Intel en 2021 como estudiante trabajador, impulsado por una pasión por el desarrollo web. Actualmente trabajo en Movable Ink.',
       skills: [
         { title: '🧠 Pensamiento Analítico', description: 'Equipado con habilidades analíticas sólidas, abordo problemas complejos con precisión y eficiencia.' },
         { title: '📚 Autoaprendizaje', description: 'Demostrando un compromiso con la mejora continua, sobresalgo en el aprendizaje independiente, adaptándome sin problemas a nuevos desafíos.' },

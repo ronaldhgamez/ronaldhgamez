@@ -19,7 +19,7 @@
   --hover-color: rgb(245, 235, 202);
   --filter-svg: invert(1);
   background: rgb(255,255,255);
-  background: linear-gradient(to right, #ffffff 0%, #f3ddfa 90%);
+  background: linear-gradient(to right, #ffffff 0%, #f3e0fc 90%);
   & .beautyTitleColor {
     color: transparent;
     background: linear-gradient(to right, #a837ff, #27e2ffeb);

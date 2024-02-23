@@ -55,5 +55,6 @@ figure {
     position: absolute;
     bottom: 35px;
     right: 45px;
+    filter: blur(0.2px) drop-shadow(0 0 10px rgb(1, 1, 1, 0.8));
 }
 </style>

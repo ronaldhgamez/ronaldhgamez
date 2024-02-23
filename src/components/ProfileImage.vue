@@ -13,7 +13,7 @@
 export default {
     data() {
         return {
-            avatarURL: 'https://avatars.githubusercontent.com/u/66141333?v=4',
+            avatarURL: 'https://media.licdn.com/dms/image/D4E03AQG6OqrZ0Ni8zA/profile-displayphoto-shrink_800_800/0/1705550557717?e=1714003200&v=beta&t=kMiFHw7OBc7TwpUtPZkR4w6SE-LGb1PNX9Uag6yW1F8',
             crFlagGif: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/cr_flag.gif'
         }
     }
@@ -36,7 +36,7 @@ export default {
 
 /* Avatar Profile */
 .image-container figure > img {
-    filter: contrast(110%);
+    filter: contrast(100%) grayscale(0%);
     border-radius: 50%;
     box-shadow: 0px 0px 80px -14px #886e41;
 }

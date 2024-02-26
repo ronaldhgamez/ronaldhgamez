@@ -1,4 +1,7 @@
 <template>
+    <br>
+    <br>
+    <h1 style="margin-top: 50px; text-align: center;">Projects</h1>
     <main class="projectsTab">
         <article class="projectElement" v-for="project in getProjects()" :key="project.title">
             <figure>
@@ -30,7 +33,7 @@
 
 <script lang="ts">
 export default {
-    name: 'home-tab',
+    name: 'projects-view',
     methods : {
         getProjects() {
             return [
@@ -88,8 +91,8 @@ main {
     /* border: solid 1px #dfdfd6; */
     display: flex;
     flex-direction: column;
-    max-width: 450px;
-    height: 320px;
+    max-width: 480px;
+    height: 410px;
     border-radius: 8px;
     /* Ocults image borders */
     overflow: hidden;
@@ -106,30 +109,23 @@ figure {
 
 .projectImage {
     width: 100%;
-    height: 210px;
+    height: 280px;
     /* Ensures the image covers the entire space, preserving aspect ratio */
     object-fit: cover;
-    object-position: top;
+    filter: grayscale(10%);
 }
 
 .projectInfoContainer {
-    /* border: dotted 1px red; */
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: 110px;
 }
 
 .article {
     width: 85%;
-    /* border: dotted #9497f8; */
     color: var(--text-color);
     overflow: hidden;
 }
-
-/* .projectElement:hover .title {
-    
-}
- */
 
 .projectTitle {
     /* border: dotted green; */

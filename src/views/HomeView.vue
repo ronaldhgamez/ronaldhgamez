@@ -5,13 +5,6 @@
             <h1 class="roleTitle beautyTitleColor"> {{ $t("aboutMeView.title") }} </h1>
             <p class="paragraph"> {{ $t("aboutMeView.p1") }} </p>
             <p class="paragraph"> {{ $t("aboutMeView.p2") }} </p>
-            <!-- <section class="skillsContainer">
-                    <SkillElement
-                        v-for="skill in getSkillList()" :key="skill.title"
-                        :title="skill.title" 
-                        :description="skill.description"
-                    ></SkillElement>
-                </section> -->
         </main>
 
         <aside class="aside-content">
@@ -19,8 +12,7 @@
             <footer class="footer-aside">
                 <h3 class="fullname">Ronald Herrera Gámez</h3>
                 <figure class="locationIcon">
-                    <img src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/244cc277fcd3100d77374f3b3893fd5ba68d01e8/svg/ubication.svg"
-                        alt="Location SVG icon" width="20px" height="11px">
+                    <UbicationSVG :size="13"></UbicationSVG>
                     <legend>Alajuela, Costa Rica</legend>
                 </figure>
             </footer>
@@ -31,10 +23,10 @@
 
 <script lang="ts">
 import ProfileImage from '../components/ProfileImage.vue';
-import SkillElement from '../components/SkillElement.vue'
+import UbicationSVG from '../assets/svg/UbicationSVG.vue';
 
 export default {
-    name: 'about-container',
+    name: 'home-view',
     data() {
         return {
             skills: {}
@@ -55,8 +47,7 @@ export default {
         }
     },
     components: {
-        SkillElement,
-        ProfileImage
+        ProfileImage, UbicationSVG
     }
 }
 </script>
@@ -114,18 +105,11 @@ export default {
 .locationIcon {
     display: flex;
     align-items: center;
+    gap: 5px;
     margin: 10px 20px;
     color: var(--text-color);
-    font-size: 12px;
+    font-size: 13px;
 }
-
-/* .skillsContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin: 55px 20px 0 0;
-    outline: 1px solid red;
-} */
 
 @media only screen and (max-width: 900px) {
     .container {

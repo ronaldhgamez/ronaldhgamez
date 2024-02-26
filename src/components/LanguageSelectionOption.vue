@@ -3,13 +3,13 @@
         <button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
             <img 
                 class="icon"
-                src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/svg/translate.svg"
+                src="../assets/svg/Translate.svg"
                 alt="translate svg" 
                 width="20"
                 height="20">
             <img
                 class="icon"
-                src="https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/svg/downArrow.svg"
+                src="../assets/svg/DownArrow.svg"
                 alt="down arrow svg" 
                 width="20" 
                 height="18">
@@ -30,38 +30,39 @@
 
 
 <script lang="ts">
+
     export default {
-        name: 'language-selection-option',
-        data() {
-            return {
-                selectedLang: localStorage.getItem('lang') || 'en',
-                langOptions: {
-                    en: 'English',
-                    sp: 'Español',
-                    ja: '日本語'
-                }
+    name: 'language-selection-option',
+    data() {
+        return {
+            selectedLang: localStorage.getItem('lang') || 'en',
+            langOptions: {
+                en: 'English',
+                sp: 'Español',
+                ja: '日本語'
             }
+        };
+    },
+    mounted() {
+        this.changeLanguage(this.selectedLang);
+    },
+    methods: {
+        removeSelectedLanguageList(): string[] {
+            // Convert the keys of langOptions to an array
+            const langOptionsArray: string[] = Object.keys(this.langOptions);
+            // Filter the array to remove the selected language
+            const filteredLangOptions = langOptionsArray.filter(langKey => langKey !== this.selectedLang);
+            // Now you can use filteredLangOptions as needed
+            return filteredLangOptions;
         },
-        mounted() {
-            this.changeLanguage(this.selectedLang)
-        },
-        methods: {
-            removeSelectedLanguageList(): string[] {
-                // Convert the keys of langOptions to an array
-                const langOptionsArray: string[] = Object.keys(this.langOptions);
-                // Filter the array to remove the selected language
-                const filteredLangOptions = langOptionsArray.filter(langKey => langKey !== this.selectedLang);
-                // Now you can use filteredLangOptions as needed
-                return filteredLangOptions;
-            },
-            changeLanguage(lang: string) {
-                this.selectedLang = lang;
-                this.$i18n.locale = lang;
-                localStorage.setItem('lang', lang)
-                this.$forceUpdate();
-            }
+        changeLanguage(lang: string) {
+            this.selectedLang = lang;
+            this.$i18n.locale = lang;
+            localStorage.setItem('lang', lang);
+            this.$forceUpdate();
         }
     }
+}
 </script>
 
 

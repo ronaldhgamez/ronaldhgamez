@@ -8,6 +8,7 @@
   --theme-color: #1b1b1f;
   --text-color: #fff9e7;
   --hover-color: #262b30;
+  --icon-hover: #91caf572;
   --filter-svg: invert(0);
   background: rgb(27, 27, 31);
   background: linear-gradient(to right, #231f28 0%, #111 90%);
@@ -16,7 +17,8 @@
 :root .light {
   --theme-color: #dde7e6;
   --text-color: #494137;
-  --hover-color: rgb(245, 235, 202);
+  --hover-color: #f3e0fc;
+  --icon-hover: rgba(152, 129, 173, 0.727);
   --filter-svg: invert(1);
   background: rgb(255,255,255);
   background: linear-gradient(to right, #ffffff 0%, #f3e0fc 90%);

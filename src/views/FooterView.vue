@@ -1,22 +1,33 @@
 <template>
-    <hr>
     <footer class="footer-section">
         <section class="contact">
-            <linkedin-icon></linkedin-icon>
-            <GitHubIcon></GitHubIcon>
+            <a class="icon-container container-style" target="_blank" rel="noopener noreferrer"
+                href="https://linkedin.com/in/ronaldhgamez">
+
+                <LinkedinSVG :size="35"></LinkedinSVG>
+
+                Linkedin
+            </a>
+            <a class="icon-container container-style" target="_blank" rel="noopener noreferrer"
+                href="https://github.com/ronaldhgamez">
+
+                <GitHubSVG :size="35"></GitHubSVG>
+
+                GitHub
+            </a>
         </section>
-        <span>All rights reserved. Created by Ronald Herrera Gámez.</span>
+        <span>Created by <a href="https://www.linkedin.com/in/ronaldhgamez/" target="_blank" rel="noopener noreferrer">Ronald Herrera Gámez.</a></span>
     </footer>
 </template>
 
 <script lang="ts">
-import LinkedinIcon from '../components/LinkedinIcon.vue';
-import GitHubIcon from '../components/GitHubIcon.vue';
+import LinkedinSVG from '../assets/svg/LinkedinSVG.vue';
+import GitHubSVG from '../assets/svg/GitHubSVG.vue';
 
 export default {
     name: 'FooterView',
     components: {
-        LinkedinIcon, GitHubIcon
+        LinkedinSVG, GitHubSVG
     }
 }
 </script>
@@ -32,7 +43,36 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 200px;
+    border-top: 1px solid var(--hover-color);
+}
+
+
+/* Icon */
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 140px;
+    padding: 10px 0;
+}
+
+a {
+    font-weight: 650;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.container-style {
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--hover-color);
+        transition: 0.25s;
+    }
 }
 
 </style>

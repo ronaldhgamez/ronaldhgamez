@@ -13,7 +13,7 @@ const messages = {
       projects: [
         {
           title: 'Cultour Costa Rica - Under development',
-          description: 'Freelance project for Cultour CR, focused on modernizing its website and highlighting its services, ranging from traditional farming practices to engaging in typical activities in Costa Rica, for potential clientsfreelance project for Cultour CR, focused on modernizing its website and highlighting its services, ranging from traditional farming practices to engaging in typical activities in Costa Rica.'
+          description: 'Freelance project for Cultour CR, focused on modernizing its website and highlighting its services, ranging from traditional farming practices to engaging in typical activities in Costa Rica, for potential clients.'
         },
         {
           title: 'Connect Four 🔴 Web Board Game 🟡',

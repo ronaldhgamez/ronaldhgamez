@@ -45,7 +45,7 @@ export default {
     data() {
         return {
             logoURL: 'https://github.com/ronaldhgamez/files-and-images/blob/main/logo/logoporfolio.png?raw=true',
-            cv: 'https://drive.google.com/file/d/1pbjDCSSPL7v49Ip5UmD1YQBe2NjhK_ex/view?usp=sharing',
+            cv: 'https://drive.google.com/file/d/1BnyR4y1CFjbeOAdOopyiNd7izE0G3oxY/view?usp=sharing',
         }
     }
 }

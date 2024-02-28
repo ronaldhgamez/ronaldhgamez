@@ -42,7 +42,7 @@ export default {
                     title: this.$t("homeTab.projects[0].title"),
                     description: this.$t("homeTab.projects[0].description"),
                     image: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/cultour.webp',
-                    href: 'https://www.figma.com/proto/5E1lDP2eCHKICHELvsuBNj/Site?type=design&node-id=76-33&t=4BNJ1OojG9uh2c7Q-1&scaling=scale-down&page-id=0%3A1'
+                    href: 'https://cultourcostarica.netlify.app/'
                 },
                 {
                     id: 'p1',

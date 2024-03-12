@@ -6,30 +6,25 @@
         </router-link>
 
         <div class="webHeaderContent">
-
             <nav class="center navBarMenu">
                 <a class="navOption center" href="#home"> {{ $t("appView.home") }} </a>
                 <a class="navOption center" href="#projects"> {{ $t("appView.projects") }} </a>
                 <a class="navOption center" target="_blank" :href="cv"> {{ $t("appView.resume") }} </a>
             </nav>
-
             <!-- Linkedin Icon Link -->
-            <a class="navOption center" href="https://www.linkedin.com/in/ronaldhgamez/" aria-label="linkedin"
+            <a class="linkedin navOption center" href="https://www.linkedin.com/in/ronaldhgamez/" aria-label="linkedin"
                 target="_blank" rel="noopener nofollow">
-                <LinkedinSVG :size="25"></LinkedinSVG>
+                <LinkedinSVG :size="24"></LinkedinSVG>
             </a>
             <!-- Github Icon Link -->
-            <a class="navOption center" href="https://github.com/ronaldhgamez" aria-label="github" target="_blank" rel="noopener nofollow">
-                <GitHubSVG :size="28"></GitHubSVG>
+            <a class="github navOption center" href="https://github.com/ronaldhgamez" aria-label="github" target="_blank" rel="noopener nofollow">
+                <GitHubSVG :size="24"></GitHubSVG>
             </a>
             <!-- Language Selection -->
             <language-selection-option></language-selection-option>
             <!-- Theme Mode Selection -->
             <toggle-buttom-theme></toggle-buttom-theme>
         </div>
-
-
-
     </header>
 </template>
 
@@ -68,15 +63,15 @@ window.addEventListener('scroll', () => {
 </script>
 
 <style scoped>
+
 #nav-logo {
     position: relative;
     width: 120px;
-    transition: width 0.5s ease;
-    /* filter: drop-shadow(0 0px 10px #f0d1f780); */
+    transition: width 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
 #nav-logo:hover {
-    filter: drop-shadow(0 0px 10px #f0d1f780);
+    filter: drop-shadow(0 0 5px rgba(116, 167, 255, 0.44));
 }
 
 #container {
@@ -107,7 +102,7 @@ window.addEventListener('scroll', () => {
 }
 
 .navOption {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
     height: 63px;
     display: flex;
@@ -117,15 +112,17 @@ window.addEventListener('scroll', () => {
     cursor: pointer;
     color: var(--text-color);
     text-decoration: none;
+    transition: color 0.1s ease;
 }
 
 .navOption:hover {
-    color: #3fa7fc;
-    transition: 0.5s;
+    background-image: linear-gradient(to right, #8EC5FC, #de63e7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .navOption:active {
-    transition: 0.5s;
     box-shadow: 0px 0px 2px 1px;
 }
 
@@ -138,4 +135,17 @@ window.addEventListener('scroll', () => {
 .blur-header {
     backdrop-filter: blur(8px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}</style>
+}
+
+.linkedin, .github {
+    transition: color 0.3s ease-in-out;
+}
+
+.linkedin:hover {
+    color: #c37d16;
+}
+
+.github:hover {
+    color: #adbac7;
+}
+</style>

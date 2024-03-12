@@ -70,7 +70,7 @@ export default {
 }
 
 .paragraph {
-    max-width: 500px;
+    max-width: 455px;
     padding: 5px;
     color: var(--text-color);
     text-wrap: pretty;
@@ -79,14 +79,14 @@ export default {
 
 /* aside Container */
 .aside-content {
-    border-left: solid 1px rgb(255 255 255 / 8%);
+    border-left: solid 1px rgba(66, 63, 52, 0.41);
 }
 
 .footer-aside {
     display: flex;
     flex-direction: column;
-    width: 270px;
-    min-width: 270px;
+    width: 350px;
+    min-width: 350px;
     min-height: 65px;
     height: 65px;
     /* outline: dotted 4px rgb(86, 59, 9); */
@@ -94,10 +94,9 @@ export default {
 
 .fullname {
     margin: 0 20px;
-    font-size: 20px;
-    color: var(--text-color);
+    font-size: 30px;
     font-family: "Elsie Swash Caps", serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     color: #fea404;
 }
@@ -108,7 +107,7 @@ export default {
     gap: 5px;
     margin: 10px 20px;
     color: var(--text-color);
-    font-size: 13px;
+    font-size: 15px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -132,7 +131,6 @@ export default {
 
     .roleTitle {
         max-width: 500px;
-        font-size: 1.5em;
         padding: 0 20px;
     }
     

@@ -2,17 +2,15 @@
     <div class="navBarTranslations">
         <button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
             <img 
-                class="icon"
                 src="../assets/svg/Translate.svg"
                 alt="translate svg" 
-                width="20"
-                height="20">
+                width="24"
+                height="24">
             <img
-                class="icon"
                 src="../assets/svg/DownArrow.svg"
                 alt="down arrow svg" 
-                width="20" 
-                height="18">
+                width="24" 
+                height="24">
         </button>
         <!-- Hiddend Menu Language -->
         <div class="menuLanguages floatingMenu">
@@ -67,11 +65,11 @@
 
 
 <style>
-/* Language menu */
 
 .navBarTranslations {
     display: flex;
     align-items: center;
+    margin-right: 11px;
 }
 
 .selectedLanguage {
@@ -79,23 +77,16 @@
 }
 
 .button {
+    margin-top: 4px;
     width: 70px;
     background-color: transparent;
     filter: invert();
-    border: 0px solid gray;
+    border: none;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .button:hover {
-    opacity: 0.5;
-    transition: 0.2s;
-    border-width: 1px;
-    border-top: none;
-    border-bottom: none;
-    transition: border 0.2s, opacity 0.1s;
-}
-
-.icon {
-    filter: var(--filter-svg);
+    opacity: 0.7;
 }
 
 .menuLanguages {
@@ -103,18 +94,18 @@
     display: none;
     justify-content: center;
     align-items: center;
-    border: solid 1px rgb(128, 128, 128, 0.2);
+    border: solid 1px rgb(128, 128, 128, 0.1);
     background: var(--theme-color);
-    width: 130px;
-    height: 150px;
-    border-radius: 10px;
+    width: 140px;
+    height: 126px;
+    border-radius: 5px;
 }
 
 .floatingMenu {
     z-index: 3;
     position: absolute;
-    top: 44px;
-    right: 65px;
+    top: 50px;
+    right: 80px;
 }
 
 /* Displays menu when hower on button */
@@ -135,31 +126,33 @@
     margin: 6px;
     padding: 0 6px;
     font-weight: bold;
+    font-size: 18px;
+    background-image: linear-gradient(to right, #68aef5, #de63e7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .language {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    height: 26px;
+    height: 28px;
     padding: 0 12px;
-}
-
-.language:hover {
-    transition: 0.2s;
-    background-color: rgb(113, 113, 113, 0.2);
+    transition: color 0.2s ease-in-out;
     cursor: pointer;
 }
 
 .language:hover .langOption {
-    color: #00a2ff;
+    color: #b0bbc7;
 }
 
 .langOption {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     text-decoration: none;
     color: var(--text-color);
+    opacity: 0.7;
 }
 
 .link {

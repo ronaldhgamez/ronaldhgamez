@@ -13,6 +13,8 @@
 
 <script lang="ts">
 
+import '@fontsource/elsie-swash-caps';
+import '@fontsource-variable/jost';
 import NavHeader from './components/NavHeader.vue';
 import HomeView from './views/HomeView.vue';
 import ProjectsView from './views/ProjectsView.vue';

@@ -12,7 +12,11 @@ const messages = {
     homeTab: {
       projects: [
         {
-          title: 'Cultour Costa Rica - Under development',
+          title: '33Force - Website',
+          description: 'Freelance landing page project for the official website of the construction company 33force',
+        },
+        {
+          title: 'Cultour Costa Rica - Web',
           description: 'Freelance project for Cultour CR, focused on modernizing its website and highlighting its services, ranging from traditional farming practices to engaging in typical activities in Costa Rica, for potential clients.'
         },
         {
@@ -53,11 +57,15 @@ const messages = {
     homeTab: {
       projects: [
         {
-          title: 'Cultour Costa Rica - En desarrollo',
+          title: '33Force - Website',
+          description: 'Proyecto freelance landing page de sitio web oficial de la empresa constructora 33force',
+        },
+        {
+          title: 'Cultour Costa Rica - Website',
           description: 'Proyecto freelance para la empresa Cultour CR hecho para modernizar su sitio web y destacar sus servicios, desde prácticas agrícolas tradicionales hasta participar en actividades típicas de Costa Rica.'
         },
         {
-          title: 'Cuatro en línea 🔴 Juego de mesa en la web 🟡',
+          title: 'Cuatro en línea 🔴 Juego de mesa 🟡',
           description: 'Lógica de juego para el juego de mesa "Cuatro en línea". ¡Intenta jugar contra esta inteligencia artificial y supérala!',
         },
         {
@@ -93,7 +101,10 @@ const messages = {
     },
     homeTab: {
       projects: [
-        
+        {
+          title: '33Force - 網站',
+          description: '建築公司33force官方網站的自由登陸頁面項目',
+        },
         {
           title: 'Cultour Costa Rica - 正在开发中',
           description: '这是为Cultour CR公司进行的自由职业项目，旨在现代化其网站并展示其服务，从传统的农业实践到参与典型的哥斯达黎加活动，面向潜在客户。',

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 align="center">Skills</h1>
+        <h1 class="titles" align="center">Skills</h1>
         <StackTech title="| Front-End Stack"></StackTech>
         <StackTech title="| Back-End Stack"></StackTech>
         <StackTech title="| Other Technologies"></StackTech>
@@ -158,7 +158,8 @@ export default {
 
 .tech-card {
     border-radius: 10px;
-    width: 280px;
+    min-width: 280px;
+
     height: 370px;
     box-sizing: border-box;
     box-shadow: 0px 1px 5px var(--icon-hover);

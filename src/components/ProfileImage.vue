@@ -31,30 +31,30 @@ export default {
     width: 270px;
     min-height: 270px;
     min-width: 20px;
+    margin-left: 10px;
     /* outline: dotted 4px blue; */
 }
 
 /* Avatar Profile */
 .image-container figure > img {
-    filter: contrast(100%) grayscale(0%);
+    filter: contrast(105%) grayscale(5%);
     border-radius: 50%;
-    box-shadow: 0px 0px 80px -14px #886e41;
+    box-shadow: 0px 0px 80px -14px #6e4188;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .image-container img:hover {
-    outline: none;
-    box-shadow: 0px 0px 150px -14px #cf9d40;
-    transition: 0.3s;
+    box-shadow: 0px 0px 150px -14px #6d4585;
 }
 
 figure {
-    margin: 0;
+    margin-right: auto;
 }
 
 .cr-flag {
     position: absolute;
     bottom: 35px;
-    right: 45px;
+    right: 28px;
     filter: blur(0.2px) drop-shadow(0 0 10px rgb(1, 1, 1, 0.8));
 }
 </style>

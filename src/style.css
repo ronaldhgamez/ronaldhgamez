@@ -6,22 +6,22 @@
 
 :root .dark {
   --theme-color: #1b1b1f;
-  --text-color: #fff9e7;
+  --text-color: #e3dbf6;
   --hover-color: #262b30;
   --icon-hover: #91caf572;
   --filter-svg: invert(0);
   background: rgb(27, 27, 31);
-  background: linear-gradient(to right, #231f28 0%, #111 90%);
+  background: linear-gradient(to right, #231f28, #111);
 }
 
 :root .light {
   --theme-color: #dde7e6;
-  --text-color: #494137;
+  --text-color: #453833;
   --hover-color: #f3e0fc;
   --icon-hover: rgba(152, 129, 173, 0.727);
   --filter-svg: invert(1);
   background: rgb(255,255,255);
-  background: linear-gradient(to right, #ffffff 0%, #f3e0fc 90%);
+  background: linear-gradient(to right, #ffffff, #f3e0fc);
   & .beautyTitleColor {
     color: transparent;
     background: linear-gradient(to right, #a837ff, #27e2ffeb);
@@ -34,7 +34,7 @@
 body {
   margin: 0;
   font-size: 16px;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Jost Variable', sans-serif;
   background-color: var(--theme-color);
   color: var(--text-color);
 }
@@ -45,7 +45,6 @@ body {
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 48px;
   /* Font */
   font-family: "Oleo", system-ui !important;
   font-weight: 900 !important;
@@ -55,7 +54,7 @@ body {
 
 .roleTitle {
   max-width: 500px;
-  font-size: 2.5em;
+  font-size: 2.2em;
   text-wrap: balance;
   padding: 0 5px;
   font-family: "Elsie Swash Caps", serif;
@@ -64,26 +63,30 @@ body {
   /* outline: dotted 3px greenyellow; */
 }
 
-/* scroll bar */
-/* For WebKit-based browsers */
-body {
-  scrollbar-color: var(--theme-color) #555555;
-  /* Dark scrollbar color */
+
+/* Estilos para la barra de desplazamiento en Google Chrome */
+/* WebKit */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento */
 }
 
-/* For older versions of WebKit-based browsers (like Safari) */
-body::-webkit-scrollbar {
-  width: 12px;
+::-webkit-scrollbar-thumb {
+  background-color: #333; /* Color del thumb (la parte que se arrastra) */
 }
 
-body::-webkit-scrollbar-thumb {
-  background-color: #555555;
-  /* Dark thumb color */
-}
-
-body::-webkit-scrollbar-track {
-  background-color: var(--theme-color);
-  /* Dark track color */
+/* Estilos para la barra de desplazamiento en Mozilla Firefox */
+/* Firefox */
+html {
+  scrollbar-color: #333 var(--theme-color); /* thumb color y track color */
 }
 
 
+.titles {
+  padding-top: 20px;
+  font-family: "Elsie Swash Caps", serif;
+  background-image: linear-gradient(to right, #57a1eb, #c263e7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 3.3em;
+}

@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@fontsource-variable/jost": "^5.0.18",
-    "@fontsource/merriweather": "^5.0.12",
+    "@fontsource/elsie-swash-caps": "^5.0.19",
     "vue": "^3.3.8",
     "vue-i18n": "^9.8.0",
     "vue-router": "^4.2.5"

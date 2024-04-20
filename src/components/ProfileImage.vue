@@ -13,7 +13,7 @@
 export default {
     data() {
         return {
-            avatarURL: 'https://media.licdn.com/dms/image/D4E03AQG6OqrZ0Ni8zA/profile-displayphoto-shrink_800_800/0/1705550557717?e=1714003200&v=beta&t=kMiFHw7OBc7TwpUtPZkR4w6SE-LGb1PNX9Uag6yW1F8',
+            avatarURL: 'https://media.licdn.com/dms/image/D4E03AQHzvBrA1Lrc1A/profile-displayphoto-shrink_800_800/0/1713334182680?e=1718841600&v=beta&t=X9IcJuC5tZq9RlH_GC16Ao_Cjq6CPUsyRzwIs6qff4g',
             crFlagGif: 'https://raw.githubusercontent.com/ronaldhgamez/files-and-images/main/portafolio/cr_flag.gif'
         }
     }

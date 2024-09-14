@@ -1,7 +1,7 @@
 <template>
     <section class="image-container">
         <figure>
-            <img :src="avatarURL" alt="Photo of face of Ronald Herrera with a brown hat" width="230">
+            <img src="../assets/profile.jpg" alt="Photo of face of Ronald Herrera with a brown hat" width="230">
             <legend class="cr-flag">
                 <img :src="crFlagGif" alt="Costa Rica Flag SVG icon" width="32">
             </legend>

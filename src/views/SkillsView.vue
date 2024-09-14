@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="titles" align="center">Skills</h1>
+        <h1 class="titles" align="center">Tech Stack</h1>
         <StackTech title="| Front-End Stack"></StackTech>
         <StackTech title="| Back-End Stack"></StackTech>
         <StackTech title="| Other Technologies"></StackTech>
@@ -166,9 +166,9 @@ export default {
 
     & h2 {
         color: var(--text-color);
-        text-align: center;
+        padding-left: 34px;
         padding-top: 20px;
-        font-size: 20px;
+        font-size: 16px;
         font-family: "Onest", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;

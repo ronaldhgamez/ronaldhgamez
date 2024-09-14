@@ -75,4 +75,8 @@ a {
     }
 }
 
+span a {
+    color: #578bd4;
+}
+
 </style>
